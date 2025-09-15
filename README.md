@@ -36,6 +36,7 @@ The repository is organized into several key components:
 - **Components**:
   - FIWARE Context Broker integration (`docker-compose.yml`)
   - Real-time SUMO data streaming (`sumo_to_fiware.py`)
+  - Pre-configured Grafana dashboard (`Grafana_Dashboard_Model.json`)
   - Orion Context Broker, QuantumLeap, CrateDB, and Grafana stack
 
 #### 4. Data Processing Pipeline
@@ -76,7 +77,14 @@ The repository is organized into several key components:
 ### Real-Time Integration
 - **FIWARE Stack**: Complete IoT platform for data management
 - **Live Data Streaming**: Real-time vehicle positions, speeds, and emissions
-- **Dashboard Visualization**: Grafana-based monitoring and analytics
+- **Dashboard Visualization**: Comprehensive Grafana dashboard with multiple analytics panels
+  - Traffic congestion analysis (top congested streets)
+  - Real-time vehicle count and evolution
+  - Waiting time analysis
+  - Geographic visualization with pollution hotspots
+  - Speed distribution and analysis
+  - CO2 emissions monitoring
+  - Interactive maps of Hay Hassani area
 
 ### Data Analysis
 - **Comparative Analysis**: Real traffic data vs simulation outputs
@@ -153,11 +161,21 @@ python RealDataForCalibration.py
 ### Dashboard Integration
 ```bash
 cd Dashboard/
+# Start FIWARE services
+docker-compose up -d
+
+# Run SUMO data streaming
 python sumo_to_fiware.py
 ```
 
-Access the dashboard at:
-- Grafana: http://localhost:3000
+#### Import Pre-configured Dashboard
+1. Access Grafana at http://localhost:3000 (admin/admin)
+2. Go to Dashboard > Import
+3. Upload `Grafana_Dashboard_Model.json`
+4. Configure CrateDB data source (PostgreSQL protocol, localhost:5432)
+
+Access services at:
+- Grafana Dashboard: http://localhost:3000
 - CrateDB Admin: http://localhost:4200
 - Orion Context Broker: http://localhost:1026
 
@@ -186,6 +204,10 @@ Access the dashboard at:
 - **Time Series**: QuantumLeap for historical data
 - **Storage**: CrateDB for scalable analytics
 - **Visualization**: Grafana for real-time monitoring
+  - Pre-configured dashboard model with SQL queries
+  - Multiple visualizations (bar charts, maps, histograms, time series)
+  - Georeferenced traffic monitoring
+  - Pollution and congestion analytics
 
 ## Results and Validation
 
@@ -205,6 +227,7 @@ Access the dashboard at:
 Stage-LIDSI/
 ├── Dashboard/
 │   ├── docker-compose.yml          # FIWARE services configuration
+│   ├── Grafana_Dashboard_Model.json # Pre-configured dashboard with analytics panels
 │   └── sumo_to_fiware.py          # Real-time data streaming
 ├── Simulations/
 │   ├── Episode1/                   # Traffic scenario 1
