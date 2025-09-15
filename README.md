@@ -259,9 +259,9 @@ This project is developed for academic and research purposes at Université Hass
 ## Acknowledgments
 
 We would like to express our sincere gratitude to our supervising professors at the Faculté des Sciences Ain-Chock – Université Hassan II de Casablanca:
-- **Prof. Jai Said Andaloussi**
-- **Prof. El Ouassit Youssef**
-- **Prof. El kasmi alaoui seddiq**
+- **Prof. Saïd JAI ANDALOUSSI**
+- **Prof. Ouassit Youssef**
+- **Prof. Seddiq EL KASMI ALAOUI**
 
 Their guidance, expertise, and support were invaluable throughout this internship project.
 
