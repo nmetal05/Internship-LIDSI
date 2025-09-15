@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-27 00:17:10.929784 by scenarioFromOSM.py UNKNOWN
+<configuration>
+    <net-file value="osm.net.xml"/>
+    <ptlines-file value="osm_ptlines.xml"/>
+    <ptstops-file value="osm_stops.add.xml"/>
+    <output-file value="osm_pt.rou.xml"/>
+    <begin value="14400.0"/>
+    <end value="86400.0"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_72:0" edges="--166996#10 --168794 -168417#1 -168982#0 -168982#1 -168982#2 -166996#12 -166996#13 -167766#0 -167766#1 -167766#2 -169065#1 -166506#0 --166817#1 --166817#0 --167766#4 --167766#3 --167766#2 --167766#1 --167766#0 --166996#13 --166996#12 --166996#11 --166996#10 --166996#9 --166996#8 --166996#7 --166996#6 --166996#5 --166996#4 --166996#3 --166996#2 --166996#1 --169094#2 --169094#1 --169094#0 -168936 --169316#1 -167940#0 -167940#1 -167940#2 --168826 --168161 -169316#0" >
+        <stop busStop="-590477" duration="20" until="31.0"/> <!-- Stade Hay Hassani -->
+        <stop busStop="-589560@-1934" duration="20" until="115.0"/> <!-- Mosquée Afghanistan -->
+        <stop busStop="-599125" duration="20" until="300.0"/> <!-- Terminus Sidi Al-Khadir -->
+    </route>
+    <route id="pt_bus_BW2:0" edges="-169039#6 -169039#7 -169039#8 -169039#9 -169039#11 -169039#12 -169039#13 -169039#14 -169039#15 -169039#16 -169039#17 -169039#20 -169039#21 -169039#23 -169298#0 -169298#1 -169039#28" >
+        <stop busStop="-602481" duration="20" until="45.0"/> <!-- Les Musees -->
+        <stop busStop="-586550" duration="20" until="116.0"/> <!-- Oued Oum Rabia -->
+        <stop busStop="-591582" duration="20" until="297.0"/> <!-- Oued Laou -->
+        <stop busStop="-592515" duration="20" until="390.0"/> <!-- Oued Beht -->
+        <stop busStop="-586352" duration="20" until="456.0"/> <!-- Moulouya -->
+    </route>
+    <route id="pt_bus_BW2:1" edges="-167438#3 -169108 -167117#0 -167117#1 -167117#2 -167438#8 -167438#10 -167438#11 -167438#14 -167438#15 -167438#16 -167438#17 -167438#18 -167438#19 -167438#20 -167438#22 -167438#23 -167438#24 -167438#25" >
+        <stop busStop="-594225" duration="20" until="48.0"/> <!-- Moulouya -->
+        <stop busStop="-601783" duration="20" until="120.0"/> <!-- Oued Beht -->
+        <stop busStop="-589628" duration="20" until="215.0"/> <!-- Oued Laou -->
+        <stop busStop="-585163" duration="20" until="356.0"/> <!-- Oued Oum Rabia -->
+        <stop busStop="-590454" duration="20" until="422.0"/> <!-- Les Musees -->
+    </route>
+    <route id="pt_bus_L109:0" edges="-167855 -166144#3 -166144#4 -166144#5 -166144#8 -166144#9 -166144#10 -167923#0 -167923#1 -166267#0 -166267#1 -166267#2 -166267#3 -166267#4 -166267#5 -166267#6 -166267#7 -166267#8 -166267#9 -166267#10 -166267#11 -165240#0 -165240#1 -165240#2 -165240#3 -165240#4 -169298#0 -169298#1 -167698#1 -167698#2 -166208#0 -166208#1 -166208#2 -166208#4 -166208#5 -166208#6 -166208#7 -166208#8 -166208#10 -168363#0 -168363#1 -168363#2 -168363#3 -169133#1 -169133#2 -168475#0 -166010#0 -166010#1 -166010#2 -166010#3 -167646#0 -167646#1 -167646#2 -167646#3 -167646#4 -167176#0 -167176#1 -167176#2 -169322 --167307#2 --167307#1 --167805#1 --167805#0 --168722#2 --168722#1 --168722#0 --167281#2 --167281#1 --167281#0 --165646" >
+        <stop busStop="-602930" duration="20" until="47.0"/> <!-- L'Academie -->
+        <stop busStop="-592734" duration="20" until="141.0"/> <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-604947" duration="20" until="203.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-603868" duration="20" until="428.0"/> <!-- Résidence Abwab Rabia -->
+        <stop busStop="-601876@-1930" duration="20" until="502.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-586542" duration="20" until="559.0"/> <!-- École Al Ajial -->
+        <stop busStop="-585170@-1942" duration="20" until="640.0"/> <!-- École Elbennay -->
+        <stop busStop="-604463@-1942" duration="20" until="701.0"/> <!-- C.A. Tensift -->
+        <stop busStop="-584202" duration="20" until="753.0"/> <!-- Oulfa -->
+        <stop busStop="-596941" duration="20" until="850.0"/> <!-- Rond Point Chahdia -->
+        <stop busStop="-584189" duration="20" until="912.0"/> <!-- Mosquée El Fath -->
+        <stop busStop="-593570" duration="20" until="971.0"/> <!-- Café Atlas -->
+    </route>
+    <route id="pt_bus_L13:0" edges="-169290#3 -165886#0 -165886#1 -168917#0 -168917#1 -168917#2 -165704#0 -165704#1 -167539#0 -167345#1 -167345#2 -167345#3 -166279#0 -166279#1 -166279#2 -166736#0 -166736#1 -165728#0 -165728#1 -165728#2 -165728#3 -165728#4 -165361#0 -165361#1 -165361#2 -168587#0 -168587#1 -165489#0 -165489#1 -165489#2 -165489#3 -165489#4 -165489#5 -165489#6 -165489#7 -166386#0 -166386#1 -166386#2 -166386#3 -167827#1 -169172#1 -169172#2 -169172#4 -169110#1 -169110#2 -169110#3 -169110#6" >
+        <stop busStop="-595083" duration="20" until="41.0"/> <!-- Terminus Hay Salam -->
+        <stop busStop="-585428" duration="20" until="102.0"/> <!-- Hay Salam -->
+        <stop busStop="-600059" duration="20" until="280.0"/> <!-- Tribunal -->
+        <stop busStop="-585377" duration="20" until="347.0"/> <!-- Résidences Firdaouss -->
+        <stop busStop="-601815" duration="20" until="529.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-593389" duration="20" until="590.0"/> <!-- Polyclinique CNSS Rabia -->
+    </route>
+    <route id="pt_bus_L13:1" edges="-166144#3 -166144#4 -166144#5 -166144#8 -166144#9 -166144#10 -167923#0 -167923#1 -165535#4 -168270 -165825#0 -165825#1 -165825#2 -165825#3 -165589#1 -165589#2 -165589#5 -165589#6 -168230#2 -168230#3 -165346 -168397#0 -168397#1 -168397#2 -168397#5 -167396#0 -167396#1 -167396#2 -168359#1 -169479#1 -169479#2 -169479#3 -166762#0 -166762#1 -166762#2 -165340 -169347#0 -169347#1 -165575 -166246#0" >
+        <stop busStop="-592734" duration="20" until="68.0"/> <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-604947" duration="20" until="130.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-596137" duration="20" until="241.0"/> <!-- Résidences Firdaouss -->
+        <stop busStop="-595747" duration="20" until="306.0"/> <!-- Tribunal -->
+        <stop busStop="-590796" duration="20" until="505.0"/> <!-- Hay Salam -->
+        <stop busStop="-604394" duration="20" until="575.0"/> <!-- Terminus Hay Salam -->
+    </route>
+    <route id="pt_bus_L143:0" edges="-166687 -168856#3 -168856#4 -168856#5 -168856#6 -168856#7 -168856#8 --166208#10 --166208#8 --166208#7 --166208#6 --166208#5 --166208#4 --166208#2 --166208#1 --166208#0 --169077 -166635#1 -166635#2 -165581#0 -169108 -167117#0 -167117#1 -167117#2 -166858#0 -166858#1 -166858#2 -169268#0 -169268#1 -168105#4 --166145#14 --166145#13 --166145#12 --166145#11 --166145#10 --166145#9 --166145#8 --166145#7 --166145#5 --166145#4 --166145#3 --166145#2 --166145#1 --166145#0 --167822#19 --167822#18 --167822#17 --167822#15 --167822#14 --167822#13 --167822#12 --167822#11 --167822#10 --167822#8 --167822#7 --167822#6 --167822#5 --167822#4 --167822#2" >
+        <stop busStop="-598681" duration="20" until="48.0"/> <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-591318" duration="20" until="119.0"/> <!-- C.A. Tensift -->
+        <stop busStop="-598737" duration="20" until="181.0"/> <!-- École Elbennay -->
+        <stop busStop="-586119" duration="20" until="269.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-589176" duration="20" until="402.0"/> <!-- Marjane Hay Hassani -->
+        <stop busStop="-588920" duration="20" until="521.0"/> <!-- Souk Ould Mina -->
+        <stop busStop="-602470" duration="20" until="598.0"/> <!-- Dar Lhamra -->
+    </route>
+    <route id="pt_bus_L143:1" edges="--167822#2 -169215 --166238#0 -169065#9 -167822#4 -167822#5 -167822#6 -167822#7 -167822#8 -167822#10 -165539#0 --168789 --168716#7 --167822#12 --167822#11 -165539#0 -165539#1 -165539#2 -165539#3 -165539#4 -166469#0 -166469#1 -166469#2 -166469#3 -166469#4 -166469#5 --166145#5 --166145#4 --166145#3 --166145#2 --166145#1 --166145#0 --167822#19 -167066#0 -166294#0 -166294#1 --168957#0 -167822#18 -167822#19 -166145#0 -166145#1 -166145#2 -166145#3 -166145#4 -166145#5 -166145#7 -166145#8 -166145#9 -166145#10 -166145#11 -166145#12 --168531 -168656#3 -168656#4 -168656#5 --169547#0 --166145#14 --166145#13 --168531 -168656#3 -168656#4 -168656#5 --169547#0 -168340#0 -165240#0 -165240#1 -165240#2 -165240#3 -165240#4 -169298#0 -169298#1 -169108 -167117#0 -166200#0 --168666 --167097#0 -169298#0 -169298#1 -165538 --168764#2 --168764#1 --165777#1 --165777#0 --165450#4 --165450#3 --165450#2 --165450#1 --165450#0 --166208#7 --166208#6 --166208#5 --166208#4 --166208#2 --166208#1 --166208#0 -167209#0 -167209#1 -167209#2 -165404#5 -165404#6 -165404#7 -165404#8 -165404#9 -165404#10 -166750#0 -166750#1 -167276#0 -167276#1 -167276#2 -167276#3 -167276#4 -167276#5 --166208#10 --168108#4 -168795 -166211#2 -166211#3 -166211#4 -166211#5 -165293#0 -165293#1 -165293#2 -169086" >
+        <stop busStop="-595103" duration="20" until="44.0"/> <!-- Dar Lhamra -->
+        <stop busStop="-594277" duration="20" until="187.0"/> <!-- Souk Ould Mina -->
+        <stop busStop="-594324" duration="20" until="290.0"/> <!-- Cité Police Ibn Sina -->
+        <stop busStop="-601693" duration="20" until="454.0"/> <!-- Café Kairaouan -->
+        <stop busStop="-601876" duration="20" until="638.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-585170" duration="20" until="756.0"/> <!-- École Elbennay -->
+        <stop busStop="-604463" duration="20" until="864.0"/> <!-- C.A. Tensift -->
+        <stop busStop="-585278" duration="20" until="958.0"/> <!-- Terminus Mosquée Ferrara -->
+    </route>
+    <route id="pt_bus_L19:0" edges="--167766#2 --167766#1 --167766#0 --166996#13 --166996#12 --166996#11 --166996#10 --166996#9 --166996#8 --166996#7 --166996#6 --166996#5" >
+        <stop busStop="-589560" duration="20" until="44.0"/> <!-- Mosquée Afghanistan -->
+        <stop busStop="-591059" duration="20" until="100.0"/> <!-- Café Bouchiki -->
+        <stop busStop="-589834" duration="20" until="156.0"/> <!-- Café Tafoukt -->
+    </route>
+    <route id="pt_bus_L19:1" edges="-166996#5 -166996#6 -166996#7 -166996#8 -166996#9 -166996#10 -166996#11 -166996#12 -166996#13 -167766#0 -167766#1 -167766#2" >
+        <stop busStop="-584128" duration="20" until="37.0"/> <!-- Café Tafoukt -->
+        <stop busStop="-602285" duration="20" until="90.0"/> <!-- Café Bouchiki -->
+        <stop busStop="-598914" duration="20" until="147.0"/> <!-- Mosquée Afghanistan -->
+    </route>
+    <route id="pt_bus_L301:0" edges="--167850#3 --167850#2 --167850#1 --167850#0 --169094#2 --169094#1 --169094#0 -168936 -168618#0 -168618#1 -168618#2 -168618#3 -168618#4 -168618#5" >
+        <stop busStop="-598138" duration="20" until="38.0"/> <!-- Hay Hassani T2 -->
+        <stop busStop="-590741" duration="20" until="97.0"/> <!-- ISTA Afghanistan -->
+        <stop busStop="-586471" duration="20" until="176.0"/> <!-- Derb Jamila -->
+    </route>
+    <route id="pt_bus_L301:1" edges="-169316#0 -169316#1 -169565#0 -169565#1 -169565#2 -169149#0 -169149#1 -169149#2 -169149#3 -169149#4 -169149#5 -168715#0 -168715#1 -168715#2 -168715#3 -168715#4 -168715#5 -168715#6 -168715#7" >
+        <stop busStop="-594370" duration="20" until="34.0"/> <!-- Sidi Al Khadir -->
+        <stop busStop="-594744" duration="20" until="111.0"/> <!-- Stade Hay Hassani -->
+        <stop busStop="-605151" duration="20" until="176.0"/> <!-- Hay Hassani -->
+    </route>
+    <route id="pt_bus_L50:0" edges="-169086 -168129#0 -168129#1 -168129#2 -169369#0 -169369#1 -169369#2 -169369#3 -169369#4 -169108 -167117#0 -167117#1 -167117#2 -166858#0 -166858#1 -166858#2 -169268#0 -169268#1 -168105#4 --166145#14 --166145#13 --166145#12 --166145#11 --166145#10 --166145#9 --166145#8 --166145#7 --166145#5 --166145#4 --166145#3 --166145#2 --166145#1 --166145#0 --167822#19 --167822#18 --167822#17 --167822#15 --167822#14 --167822#13 --167822#12 --167822#11 --167822#10 --167822#8 --167822#7 --167822#6 --167822#5 --167822#4 --167822#2" >
+        <stop busStop="-585278" duration="20" until="40.0"/> <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-603916" duration="20" until="109.0"/> <!-- École Al Ajial -->
+        <stop busStop="-586119" duration="20" until="167.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-587588" duration="20" until="243.0"/> <!-- Café Kairaouan -->
+        <stop busStop="-589176" duration="20" until="321.0"/> <!-- Marjane Hay Hassani -->
+        <stop busStop="-588920" duration="20" until="395.0"/> <!-- Souk Ould Mina -->
+        <stop busStop="-602470" duration="20" until="472.0"/> <!-- Dar Lhamra -->
+    </route>
+    <route id="pt_bus_L50:1" edges="-167822#2 -167822#4 -167822#5 -167822#6 -167822#7 -167822#8 -167822#10 -167822#11 -167822#12 -167822#13 -167822#14 -167822#15 -167822#17 -167822#18 -167822#19 -166145#0 -166145#1 -166145#2 -166145#3 -166145#4 -166145#5 -166145#7 -166145#8 -166145#9 -166145#10 -166145#11 -166145#12 -166145#13 -166145#14 -168340#0 -165240#0 -165240#1 -165240#2 -165240#3 -165240#4 -169298#0 -169298#1 -165538 -166687" >
+        <stop busStop="-595103@-1930" duration="20" until="33.0"/> <!-- Dar Lhamra -->
+        <stop busStop="-594277@-1930" duration="20" until="105.0"/> <!-- Souk Ould Mina -->
+        <stop busStop="-594324@-1930" duration="20" until="180.0"/> <!-- Cité Police Ibn Sina -->
+        <stop busStop="-601876@-1930" duration="20" until="283.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-586542" duration="20" until="341.0"/> <!-- École Al Ajial -->
+        <stop busStop="-598681" duration="20" until="407.0"/> <!-- Terminus Mosquée Ferrara -->
+    </route>
+    <route id="pt_bus_L63:0" edges="--167766#2 --167766#1 --167766#0 --166996#13 --166996#12 --166996#11 --166996#10 --166996#9 --166996#8 --166996#7 --166996#6 --166996#5 --166996#4 --166996#3 --166996#2 --166996#1 --169094#2 --169094#1 --169094#0 -168936 --169316#1 -167940#0 -167940#1 -167940#2 --168826 --168161 -169316#0" >
+        <stop busStop="-589560" duration="20" until="44.0"/> <!-- Mosquée Afghanistan -->
+        <stop busStop="-591059" duration="20" until="99.0"/> <!-- Café Bouchiki -->
+        <stop busStop="-589834" duration="20" until="154.0"/> <!-- Café Tafoukt -->
+        <stop busStop="-590741" duration="20" until="218.0"/> <!-- ISTA Afghanistan -->
+        <stop busStop="-594370" duration="20" until="304.0"/> <!-- Sidi Al Khadir -->
+    </route>
+    <route id="pt_bus_L63:1" edges="-169316#0 -169316#1 -169565#0 -169565#1 -169565#2 -169149#0 -169149#1 -169149#2 -169149#3 -169149#4 -169149#5 -168715#0 -168715#1 -168715#2 -168715#3 -168715#4 -168715#5 -168715#6 -168715#7 -167610#0 -167610#1 -166996#9 -166996#10 -166996#11 -166996#12 -166996#13 -167766#0 -167766#1 -167766#2 -167766#3 -167766#4 -167766#5 -166562#0 -166512" >
+        <stop busStop="-602105" duration="20" until="38.0"/> <!-- Sidi Al Khadir -->
+        <stop busStop="-594744" duration="20" until="114.0"/> <!-- Stade Hay Hassani -->
+        <stop busStop="-605151" duration="20" until="180.0"/> <!-- Hay Hassani -->
+        <stop busStop="-598914" duration="20" until="254.0"/> <!-- Mosquée Afghanistan -->
+        <stop busStop="-592117" duration="20" until="324.0"/> <!-- Hay El Hana -->
+    </route>
+    <route id="pt_bus_L68:0" edges="-166246#0 -166246#2 --166677 --165368#3 --165368#1 --168927#3 --168927#2 --168927#1 --168927#0 -165646 -167281#0 -167281#1 -167281#2 -168722#0 -168722#1 -168722#2 -167805#0 -167805#1 -167307#1 -167307#2 -165574 -166329 -168579 -166036 -165671#0 -165671#1 -169183#0 -169183#1 -169183#2 --166010#3 --166010#2 --166010#1 --166010#0 --168475#0 --165897 -166750#0 -166750#1 -167276#0 -167276#1 -167276#2 -167276#3 -167276#4 -167276#5 --166208#10 --166208#8 --166208#7 --166208#6 --166208#5 --166208#4 --166208#2 --166208#1 --166208#0 --169077 -166635#1 -166635#2 -165581#0 -169108 -167117#0 -167117#1 -167117#2 -166858#0 -166858#1 -166858#2 -169268#0 -169268#1 -165258#0 -165258#1 -165258#2 -165258#3 -168174 -167071#0 -167071#1 -167438#14 -169110#1 -169110#2 -169110#3 -169110#6" >
+        <stop busStop="-604394" duration="20" until="35.0"/> <!-- Terminus Hay Salam -->
+        <stop busStop="-589551" duration="20" until="104.0"/> <!-- Groupe Scolaire Al Amjad -->
+        <stop busStop="-601664" duration="20" until="182.0"/> <!-- Mosquée El Fath -->
+        <stop busStop="-585900" duration="20" until="241.0"/> <!-- Rond Point Chahdia -->
+        <stop busStop="-590411" duration="20" until="340.0"/> <!-- Oulfa -->
+        <stop busStop="-591318" duration="20" until="396.0"/> <!-- C.A. Tensift -->
+        <stop busStop="-598737" duration="20" until="457.0"/> <!-- École Elbennay -->
+        <stop busStop="-603916" duration="20" until="533.0"/> <!-- École Al Ajial -->
+        <stop busStop="-586119" duration="20" until="590.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-595229" duration="20" until="664.0"/> <!-- Résidence Abwab Rabia -->
+        <stop busStop="-601815" duration="20" until="813.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-593389" duration="20" until="874.0"/> <!-- Polyclinique CNSS Rabia -->
+    </route>
+    <route id="pt_bus_L68:1" edges="-166144#3 -166144#4 -166144#5 -166144#8 -166144#9 -166144#10 -167923#0 -167923#1 -166267#0 -166267#1 -166267#2 -166267#3 -166267#4 -166267#5 -166267#6 -166267#7 -166267#8 -166267#9 -166267#10 -166267#11 -165240#0 -165240#1 -165240#2 -165240#3 -165240#4 -169298#0 -169298#1 -169108 -167117#0 -166200#0 --168666 --167097#0 -169298#0 -169298#1 -165538 --168764#2 --168764#1 --165777#1 --165777#0 --165450#4 --165450#3 --165450#2 --165450#1 --165450#0 --166208#7 --166208#6 --166208#5 --166208#4 --166208#2 --166208#1 --166208#0 -167209#0 -167209#1 -167209#2 -165404#5 -165404#6 -165404#7 -165404#8 -165404#9 -165404#10 -166750#0 -166750#1 -167276#0 -167276#1 -167276#2 -167276#3 -167276#4 -167276#5 --166208#10 -168559#0 -168559#2 -168559#4 -168559#5 -168559#6 -168559#7 -168559#9 -168559#10 -165404#10 -165897 -167767#0 -165232 --166985#0 --165265#0 --168475#0 -167767#0 -165232 --166985#0 -165265#1 -165265#2 -165891#0 -165891#1 -165891#2 -165891#4 -165891#5 -168109#0 -168109#1 -168109#2 -169386 -166820#0 -168435#0 -167300#0 -167300#1 -165808 -168020#3 -167307#2 -165574 -166329 -168579 -166036 -167846 -167176#0 -167176#1 -167176#2 -169322 --167307#2 --167307#1 --167805#1 --167805#0 -165714#1 -168350 -165601#0 -165601#1 -165601#2 -165601#3 -168259#0 -168722#0 -168722#1 -168722#2 -165714#1 -168350 -165601#0 -165601#1 -165601#2 -165601#3 -166488#0 -166488#1 -166488#2 -165896#0 --168927#0 -165646 --169372#0 -165896#0 -168927#1 -168927#2 -168927#3 -165368#1 --168853 --167809#3 --167979 --165368#3 --165368#1 --167353#2 --166517 -166517 -167353#2 -165368#1 -165368#3 -166677 -169290#0 -169290#1 -169290#3" >
+        <stop busStop="-592734" duration="20" until="61.0"/> <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-604947" duration="20" until="122.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-603868" duration="20" until="286.0"/> <!-- Résidence Abwab Rabia -->
+        <stop busStop="-601876" duration="20" until="419.0"/> <!-- Lycée Fechtali -->
+        <stop busStop="-586542" duration="20" until="474.0"/> <!-- École Al Ajial -->
+        <stop busStop="-585170" duration="20" until="615.0"/> <!-- École Elbennay -->
+        <stop busStop="-604463" duration="20" until="724.0"/> <!-- C.A. Tensift -->
+        <stop busStop="-584202@-1943" duration="20" until="844.0"/> <!-- Oulfa -->
+        <stop busStop="-596941@-1943" duration="20" until="966.0"/> <!-- Rond Point Chahdia -->
+        <stop busStop="-584189@-1943" duration="20" until="1074.0"/> <!-- Mosquée El Fath -->
+        <stop busStop="-589132" duration="20" until="1174.0"/> <!-- Etablissement Moussaoui -->
+        <stop busStop="-600776" duration="20" until="1291.0"/> <!-- Groupe Scolaire Al Amjad -->
+        <stop busStop="-595083" duration="20" until="1402.0"/> <!-- Terminus Hay Salam -->
+    </route>
+    <route id="pt_bus_L84:0" edges="-169086 -168129#0 -168129#1 -168129#2 -169369#0 -169369#1 -169369#2 -169369#3 -169369#4 -167438#5 -167438#6 -166990#1 -166990#2 -166990#3 -166990#4 -165261#1 -165261#2 -165261#4 -165261#5 -168597#0 -168597#1 -168597#2 --166738#3 --166738#2 --166738#1 --166738#0 -168577#5 -168577#6 -166166#0 -166166#1 -166166#2 -166166#3 -168936 --169316#1 -167940#0 -167940#1 -167940#2 --168826 --168161 -169316#0 -169316#1 -168618#0 -168618#1 -168618#2 -168618#3 -168618#4 -168618#5" >
+        <stop busStop="-585278" duration="20" until="41.0"/> <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-594370" duration="20" until="274.0"/> <!-- Sidi Al Khadir -->
+        <stop busStop="-586471" duration="20" until="342.0"/> <!-- Derb Jamila -->
+    </route>
+    <route id="pt_bus_L97B:0" edges="-169290#3 -165886#0 -165886#1 -168917#0 -168917#1 -168917#2 -165704#0 -165704#1 -167539#0 -167345#1 -167345#2 -167345#3 -166279#0 -166279#1 -166279#2 -166736#0 -166736#1 -165728#0 -165728#1 -165728#2 -165728#3 -165728#4 -165361#0 -165361#1 -165361#2 -168587#0 -168587#1 -165489#0 -165489#1 -165489#2 -165489#3 -165489#4 -165489#5 -165489#6 -165489#7 -166386#0 -166386#1 -166386#2 -166386#3 -167827#1 -169172#1 -169172#2 -169172#4 -169110#1 -169110#2 -169110#3 -169110#6" >
+        <stop busStop="-595083" duration="20" until="41.0"/> <!-- Terminus Hay Salam -->
+        <stop busStop="-585428" duration="20" until="103.0"/> <!-- Hay Salam -->
+        <stop busStop="-600059" duration="20" until="279.0"/> <!-- Tribunal -->
+        <stop busStop="-585377" duration="20" until="345.0"/> <!-- Résidences Firdaouss -->
+        <stop busStop="-601815" duration="20" until="512.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-593389" duration="20" until="572.0"/> <!-- Polyclinique CNSS Rabia -->
+    </route>
+    <route id="pt_bus_L97B:1" edges="-167855 -166144#3 -166144#4 -166144#5 -166144#8 -166144#9 -166144#10 -167923#0 -167923#1 -165535#4 -168270 -165825#0 -165825#1 -165825#2 -165825#3 -165589#1 -165589#2 -165589#5 -165589#6 -168230#2 -168230#3 -165346 -168397#0 -168397#1 -168397#2 -168397#5 -167396#0 -167396#1 -167396#2 -168359#1 -169479#1 -169479#2 -169479#3 -166762#0 -166762#1 -166762#2 -165340 -169347#0 -169347#1 -165575 -166246#0" >
+        <stop busStop="-602930" duration="20" until="44.0"/> <!-- L'Academie -->
+        <stop busStop="-592734" duration="20" until="100.0"/> <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-604947" duration="20" until="161.0"/> <!-- Carr. Schneider -->
+        <stop busStop="-596137" duration="20" until="292.0"/> <!-- Résidences Firdaouss -->
+        <stop busStop="-595747" duration="20" until="357.0"/> <!-- Tribunal -->
+        <stop busStop="-590796" duration="20" until="502.0"/> <!-- Hay Salam -->
+        <stop busStop="-604394" duration="20" until="571.0"/> <!-- Terminus Hay Salam -->
+    </route>
+    <route id="pt_bus_L9E:0" edges="--165368#1 --168927#3 --168927#2 --168927#1 --168927#0 -165646 -167281#0 -167281#1 -167281#2 -168722#0 -168722#1 -168722#2 -167805#0 -167805#1 -167307#1 -167307#2 -165574 -166329 -168579 -166036 -165671#0 -165671#1 -169183#0 -169183#1 -169183#2 --166010#3 --166010#2 --166010#1 --166010#0 --168475#0 --165897 -166750#0 -166750#1 -167276#0 -167276#1 -167276#2 -167276#3 -167276#4 -167276#5 -166211#0 -166211#1 -166211#2 -166211#3 -166211#4 -166211#5 -165293#0 -165293#1 -165293#2 -169086 -168129#0 -168129#1 -168129#2 -169369#0 -169369#1 -169369#2 -169369#3 -169369#4 -167438#5 -167438#6 -166990#1 -166990#2 -166990#3 -166990#4 -165261#1 -165261#2 -165261#4 -165261#5 -168597#0 -168597#1 -168597#2 --166738#3 --166738#2 --166738#1 --166738#0 --168577#4 --168577#3 --168577#2 --168577#1 --168577#0 --167822#19 --167822#18 --167822#17 --167822#15 --167822#14 --167822#13 --167822#12 --167822#11 --167822#10 --167822#8 --167822#7 --167822#6 --167822#5 --167822#4 --167822#2" >
+        <stop busStop="-589551" duration="20" until="55.0"/> <!-- Groupe Scolaire Al Amjad -->
+        <stop busStop="-588986" duration="20" until="110.0"/> <!-- Boulevard des Facultés -->
+        <stop busStop="-585278" duration="20" until="293.0"/> <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-591476" duration="20" until="443.0"/> <!-- Cité Police Ibn Sina -->
+        <stop busStop="-588920" duration="20" until="521.0"/> <!-- Souk Ould Mina -->
+        <stop busStop="-602470" duration="20" until="597.0"/> <!-- Dar Lhamra -->
+    </route>
+    <route id="pt_tram_T1:0" color="243,130,48" edges="-167040#0 -167040#2 -167040#3 -167040#4 -167040#6 -167040#7 -167040#8 -167040#9 -167040#10" >
+        <stop busStop="-589536" duration="20" until="45.0"/> <!-- Laymoune -->
+        <stop busStop="-594114" duration="20" until="208.0"/> <!-- Facultés Terminus -->
+    </route>
+    <route id="pt_tram_T1:1" color="243,130,48" edges="-166039#2 -167866 167040#8 167040#7 167040#6 167040#4 167040#3 -168449 -166039#8 -166039#10" >
+        <stop busStop="-588640" duration="20" until="47.0"/> <!-- Facultés -->
+        <stop busStop="-589368" duration="20" until="196.0"/> <!-- Laymoune -->
+    </route>
+    <route id="pt_tram_T2:0" color="255,219,47" edges="168349#0 168220#53 168220#52 168220#51 168220#49 168220#48 -167734 -168349#7 -168349#8 -168349#9 -168349#11 -168349#12 -168349#13 -168349#15 -168349#18 -168349#21 -168349#23 -168349#24 -168349#30 -168349#31 -168349#32 -168349#33 -168349#34 -168349#35 -168349#37 -168349#39 -168349#40 -168349#41 -168349#42 -168349#43 -168349#44 -168349#45 -168349#46 -168349#47 -168349#50 -168349#51 -168349#52 -168349#53" >
+        <stop busStop="595326" duration="20" until="31.0"/> <!-- Hay Hassani -->
+        <stop busStop="-588382" duration="20" until="117.0"/> <!-- Sidi Abderrahmane -->
+        <stop busStop="-600934" duration="20" until="242.0"/> <!-- Cité de l'Air -->
+        <stop busStop="-587380" duration="20" until="313.0"/> <!-- Abdellah Ben Cherif -->
+        <stop busStop="-591091" duration="20" until="474.0"/> <!-- Place Financière -->
+        <stop busStop="-602686" duration="20" until="548.0"/> <!-- Anfa Park -->
+        <stop busStop="-604427" duration="20" until="658.0"/> <!-- Anfa Clubs -->
+        <stop busStop="-586497" duration="20" until="760.0"/> <!-- Beauséjour -->
+    </route>
+    <route id="pt_tram_T2:1" color="255,219,47" edges="-168220#1 -168220#2 -168220#3 -168220#4 -168220#8 -168220#9 -168220#10 -168220#11 -168220#12 -168220#13 -168220#14 -168220#15 -168220#17 -168220#19 -168220#20 -168220#21 -168220#22 -168220#23 -168220#24 -168220#25 -168220#30 -168220#31 -168220#33 -168220#36 -168220#39 -168220#41 -168220#42 -168220#43 -168220#44 -168220#45 -168220#46 -168220#47 -168220#48 -168220#49 -168220#51 -168220#52 -168220#53 -168220#54" >
+        <stop busStop="-599418" duration="20" until="40.0"/> <!-- Beauséjour -->
+        <stop busStop="-598263" duration="20" until="220.0"/> <!-- Anfa Clubs -->
+        <stop busStop="-594132" duration="20" until="347.0"/> <!-- Anfa Park -->
+        <stop busStop="-587418" duration="20" until="420.0"/> <!-- Place Financière -->
+        <stop busStop="-600567" duration="20" until="500.0"/> <!-- Abdellah Ben Cherif -->
+        <stop busStop="-605131" duration="20" until="620.0"/> <!-- Cité de l'Air -->
+        <stop busStop="-589519" duration="20" until="714.0"/> <!-- Sidi Abderrahmane -->
+        <stop busStop="-587557" duration="20" until="838.0"/> <!-- Hay Hassani -->
+    </route>
+    <flow id="pt_bus_L19:0" type="pt_bus" route="pt_bus_L19:0" begin="14403.0" end="86403.0" period="600" line="L19:0" >
+        <param key="name" value="L19 Place Maréchal - Terminus Riad El Oulfa 3"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_BW2:1" type="pt_bus" route="pt_bus_BW2:1" begin="14532.0" end="86532.0" period="600" line="BW2:1" >
+        <param key="name" value="BW2 Ouled Azzouz-Oulmès"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L13:0" type="pt_bus" route="pt_bus_L13:0" begin="14533.0" end="86533.0" period="600" line="L13:0" >
+        <param key="name" value="L13 Terminus Kasbat Al amine-Sidi Belyout (Bd d'Anfa)"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L68:0" type="pt_bus" route="pt_bus_L68:0" begin="14565.0" end="86565.0" period="600" line="L68:0" >
+        <param key="name" value="L68 Hay Salam-Ouled Mellouk"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L301:1" type="pt_bus" route="pt_bus_L301:1" begin="14601.0" end="86601.0" period="600" line="L301:1" >
+        <param key="name" value="L301 Fouala - Hay Hassani"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L19:1" type="pt_bus" route="pt_bus_L19:1" begin="14604.0" end="86604.0" period="600" line="L19:1" >
+        <param key="name" value="L19 Terminus Riad El Oulfa 3 - Place Maréchal"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L9E:0" type="pt_bus" route="pt_bus_L9E:0" begin="14653.0" end="86653.0" period="600" line="L9E:0" >
+        <param key="name" value="L9E Nassim - BD. Houphouët Boigny"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L143:1" type="pt_bus" route="pt_bus_L143:1" begin="14703.0" end="86703.0" period="600" line="L143:1" >
+        <param key="name" value="L143 Tacharouk-Ferara"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L63:0" type="pt_bus" route="pt_bus_L63:0" begin="14726.0" end="86726.0" period="600" line="L63:0" >
+        <param key="name" value="L63 Salmia 2 Terminus - Sidi Al Khadir"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_T1:1" type="pt_tram" route="pt_tram_T1:1" begin="14753.0" end="86753.0" period="600" line="T1:1" >
+        <param key="name" value="T1: Sidi Moumen &gt; Lissasfa"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L143:0" type="pt_bus" route="pt_bus_L143:0" begin="14415.0" end="86415.0" period="600" line="L143:0" >
+        <param key="name" value="L143 Ferara - Tacharouk"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L50:1" type="pt_bus" route="pt_bus_L50:1" begin="14783.0" end="86783.0" period="600" line="L50:1" >
+        <param key="name" value="L50 C. Sidi Belyout-Errahma"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_72:0" type="pt_bus" route="pt_bus_72:0" begin="14830.0" end="86830.0" period="600" line="72:0" >
+        <param key="name" value="Ligne 72: Salmia - Sidi Al Khadir"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L97B:1" type="pt_bus" route="pt_bus_L97B:1" begin="14806.0" end="86806.0" period="600" line="L97B:1" >
+        <param key="name" value="L97B Faculté Ben M'Sick - Lissasfa"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L109:0" type="pt_bus" route="pt_bus_L109:0" begin="14841.0" end="86841.0" period="600" line="L109:0" >
+        <param key="name" value="L109 Gare Routière Ouled Ziane-Hay Zoubir"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L68:1" type="pt_bus" route="pt_bus_L68:1" begin="14883.0" end="86883.0" period="600" line="L68:1" >
+        <param key="name" value="L68 Ouled Mellouk-Hay Salam"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L13:1" type="pt_bus" route="pt_bus_L13:1" begin="14952.0" end="86952.0" period="600" line="L13:1" >
+        <param key="name" value="L13 Sidi Belyout (Bd d'Anfa)-Terminus Kasbat Al amine"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_T2:1" type="pt_tram" route="pt_tram_T2:1" begin="14908.0" end="86908.0" period="600" line="T2:1" >
+        <param key="name" value="Tram 2: Sidi Bernoussi &gt; Aïn Diab"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L63:1" type="pt_bus" route="pt_bus_L63:1" begin="14935.0" end="86935.0" period="600" line="L63:1" >
+        <param key="name" value="L63 Sidi Al Khadir - Salmia 2 Terminus"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L84:0" type="pt_bus" route="pt_bus_L84:0" begin="14415.0" end="86415.0" period="600" line="L84:0" >
+        <param key="name" value="L84 Farah Salam - BD. Houphouët Boigny"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_T2:0" type="pt_tram" route="pt_tram_T2:0" begin="14417.0" end="86417.0" period="600" line="T2:0" >
+        <param key="name" value="Tram 2: Aïn Diab &gt; Sidi Bernoussi"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L97B:0" type="pt_bus" route="pt_bus_L97B:0" begin="14452.0" end="86452.0" period="600" line="L97B:0" >
+        <param key="name" value="L97B Lissasfa - Faculté Ben M'Sick"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_T1:0" type="pt_tram" route="pt_tram_T1:0" begin="14455.0" end="86455.0" period="600" line="T1:0" >
+        <param key="name" value="T1: Lissasfa &gt; Sidi Moumen"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L50:0" type="pt_bus" route="pt_bus_L50:0" begin="14458.0" end="86458.0" period="600" line="L50:0" >
+        <param key="name" value="L50 Errahma - C. Sidi Belyout"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_BW2:0" type="pt_bus" route="pt_bus_BW2:0" begin="14493.0" end="86493.0" period="600" line="BW2:0" >
+        <param key="name" value="BW2 Oulmès-Ouled Azzouz"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_L301:0" type="pt_bus" route="pt_bus_L301:0" begin="14519.0" end="86519.0" period="600" line="L301:0" >
+        <param key="name" value="L301 Hay Hassani-Fouala"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+</routes>

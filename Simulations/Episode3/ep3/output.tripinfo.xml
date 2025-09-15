@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-09-14 03:44:46 by Eclipse SUMO GUI Version c915cd253
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm.net.xml"/>
+        <route-files value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_activitygen.merged.rou.xml"/>
+        <additional-files value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_polygons.add.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/basic.vType.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_stops.add.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_complete_parking_areas.add.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_parking_rerouters.add.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_taxi_stands.add.xml,/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/osm_taxi_rerouters.add.xml"/>
+    </input>
+
+    <output>
+        <output-prefix value="output."/>
+        <summary-output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/summary.xml"/>
+        <person-summary-output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/person.summary.xml"/>
+        <tripinfo-output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="false"/>
+        <statistic-output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/statistics.xml"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="100000.0"/>
+        <step-length value="0.9"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.8"/>
+        <ignore-junction-blocker value="60"/>
+        <ignore-route-errors value="true"/>
+        <collision.action value="teleport"/>
+        <time-to-teleport value="300"/>
+        <max-depart-delay value="900"/>
+        <time-to-impatience value="120"/>
+        <parking.maneuver value="true"/>
+        <pedestrian.model value="striping"/>
+        <pedestrian.striping.stripe-width value="0.55"/>
+        <pedestrian.striping.dawdling value="0.2"/>
+        <pedestrian.striping.jamtime value="60"/>
+        <pedestrian.striping.jamtime.crossing value="10"/>
+        <pedestrian.striping.reserve-oncoming value="0.25"/>
+        <pedestrian.striping.reserve-oncoming.junctions value="0.34"/>
+        <ride.stop-tolerance value="25"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="astar"/>
+        <persontrip.walkfactor value="0.75"/>
+        <persontrip.transfer.car-walk value="parkingAreas,allJunctions"/>
+        <persontrip.transfer.taxi-walk value="parkingAreas,allJunctions"/>
+        <persontrip.transfer.walk-taxi value="parkingAreas,allJunctions"/>
+        <persontrip.taxi.waiting-time value="300"/>
+        <device.rerouting.probability value="1"/>
+        <device.rerouting.period value="300"/>
+        <device.rerouting.pre-period value="300"/>
+        <device.rerouting.bike-speeds value="true"/>
+        <person-device.rerouting.probability value="1"/>
+        <person-device.rerouting.period value="300"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <no-warnings value="false"/>
+        <duration-log.disable value="false"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="false"/>
+    </report>
+
+    <taxi_device>
+        <device.taxi.dispatch-algorithm value="greedy"/>
+        <device.taxi.dispatch-algorithm.output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/taxi.dispatch.xml"/>
+        <device.taxi.dispatch-period value="60"/>
+        <device.taxi.idle-algorithm value="stop"/>
+        <device.taxi.idle-algorithm.output value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/taxi.idle.xml"/>
+    </taxi_device>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="/home/dahou/Desktop/StageLIDSI/episodes_start/episode3/ep3/default-gui.xml"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="-1919_-1932_5_tr" depart="71921.70" departLane="--166364#5_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="75531.60" arrivalLane="--166364#5_1" arrivalPos="44.94" arrivalPosLat="-1.15" arrivalSpeed="2.51" duration="3609.90" routeLength="6350.31" waitingTime="24.30" waitingCount="4" stopTime="2905.20" timeLoss="145.82" rerouteNo="0" devices="tripinfo_-1919_-1932_5_tr routing_-1919_-1932_5_tr person_-1919_-1932_5_tr" vType="motorcycle" speedFactor="0.82" vaporized=""/>
+    <personinfo id="-1919_-1932_5" depart="71921.70" type="pedestrian" speedFactor="1.16" duration="3609.90" waitingTime="41.40" timeLoss="288.68" traveltime="1747.80">
+        <ride waitingTime="0.00" vehicle="-1919_-1932_5_tr" depart="71921.70" arrival="72248.40" arrivalPos="95.43" duration="326.70" routeLength="3250.55" timeLoss="63.68"/>
+        <walk depart="72248.40" departPos="95.43" arrival="72783.90" arrivalPos="89.66" duration="535.50" routeLength="724.82" timeLoss="86.93" maxSpeed="1.62" waitingTime="37.80"/>
+        <stop duration="1859.40" arrival="74643.30" arrivalPos="89.66" actType="P-Groceries"/>
+        <walk depart="74643.30" departPos="89.66" arrival="75150.90" arrivalPos="97.83" duration="507.60" routeLength="729.44" timeLoss="56.17" maxSpeed="1.62" waitingTime="2.70"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1932_5_tr" depart="75151.80" arrival="75529.80" arrivalPos="44.93" duration="378.00" routeLength="3099.75" timeLoss="81.90"/>
+        <stop duration="1.80" arrival="75531.60" arrivalPos="27.34" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1919_-1949_3_tr" depart="74134.80" departLane="-167583#2_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="76338.00" arrivalLane="-167583#2_1" arrivalPos="107.45" arrivalPosLat="0.00" arrivalSpeed="2.23" duration="2203.20" routeLength="5256.67" waitingTime="39.60" waitingCount="3" stopTime="1821.60" timeLoss="120.91" rerouteNo="0" devices="tripinfo_-1919_-1949_3_tr routing_-1919_-1949_3_tr person_-1919_-1949_3_tr" vType="passenger3" speedFactor="1.05" vaporized=""/>
+    <personinfo id="-1919_-1949_3" depart="74134.80" type="pedestrian" speedFactor="0.76" duration="2205.00" waitingTime="0.90" timeLoss="228.78" traveltime="1463.40">
+        <ride waitingTime="0.00" vehicle="-1919_-1949_3_tr" depart="74134.80" arrival="74280.60" arrivalPos="44.95" duration="145.80" routeLength="1914.05" timeLoss="52.96"/>
+        <walk depart="74280.60" departPos="44.95" arrival="74817.90" arrivalPos="85.08" duration="537.30" routeLength="511.31" timeLoss="53.98" maxSpeed="1.06" waitingTime="0.00"/>
+        <stop duration="738.90" arrival="75556.80" arrivalPos="85.08" actType="P-Groceries"/>
+        <walk depart="75556.80" departPos="85.08" arrival="76099.50" arrivalPos="47.35" duration="542.70" routeLength="517.12" timeLoss="53.89" maxSpeed="1.06" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1949_3_tr" depart="76100.40" arrival="76338.00" arrivalPos="107.45" duration="237.60" routeLength="3342.62" timeLoss="67.94"/>
+        <stop duration="1.80" arrival="76339.80" arrivalPos="38.21" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1932_-1932_7_tr" depart="73151.10" departLane="--167795#11_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="76609.80" arrivalLane="--167795#11_1" arrivalPos="35.16" arrivalPosLat="1.15" arrivalSpeed="4.46" duration="3458.70" routeLength="2845.50" waitingTime="26.10" waitingCount="2" stopTime="3211.20" timeLoss="65.50" rerouteNo="0" devices="tripinfo_-1932_-1932_7_tr routing_-1932_-1932_7_tr person_-1932_-1932_7_tr" vType="motorcycle" speedFactor="0.94" vaporized=""/>
+    <personinfo id="-1932_-1932_7" depart="73151.10" type="pedestrian" speedFactor="0.99" duration="3458.70" waitingTime="4.50" timeLoss="167.43" traveltime="1234.80">
+        <ride waitingTime="0.00" vehicle="-1932_-1932_7_tr" depart="73151.10" arrival="73268.10" arrivalPos="23.22" duration="117.00" routeLength="1161.48" timeLoss="23.94"/>
+        <walk depart="73268.10" departPos="23.22" arrival="73760.40" arrivalPos="43.82" duration="492.30" routeLength="607.45" timeLoss="50.79" maxSpeed="1.38" waitingTime="0.00"/>
+        <stop duration="2217.60" arrival="75978.00" arrivalPos="43.82" actType="P-Groceries"/>
+        <walk depart="75978.00" departPos="43.82" arrival="76473.00" arrivalPos="25.63" duration="495.00" routeLength="609.85" timeLoss="51.74" maxSpeed="1.38" waitingTime="0.00"/>
+        <ride waitingTime="4.50" vehicle="-1932_-1932_7_tr" depart="76477.50" arrival="76608.00" arrivalPos="35.16" duration="130.50" routeLength="1684.02" timeLoss="40.96"/>
+        <stop duration="1.80" arrival="76609.80" arrivalPos="17.89" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1919_-1919_66_tr" depart="74922.30" departLane="-168233#5_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="76858.20" arrivalLane="-168233#5_1" arrivalPos="142.10" arrivalPosLat="0.00" arrivalSpeed="1.30" duration="1935.90" routeLength="1739.74" waitingTime="73.80" waitingCount="3" stopTime="1680.30" timeLoss="125.21" rerouteNo="0" devices="tripinfo_-1919_-1919_66_tr routing_-1919_-1919_66_tr person_-1919_-1919_66_tr" vType="passenger4" speedFactor="0.91" vaporized=""/>
+    <personinfo id="-1919_-1919_66" depart="74922.30" type="pedestrian" speedFactor="0.89" duration="1935.90" waitingTime="0.90" timeLoss="213.87" traveltime="1146.60">
+        <ride waitingTime="0.00" vehicle="-1919_-1919_66_tr" depart="74922.30" arrival="75026.70" arrivalPos="45.05" duration="104.40" routeLength="537.08" timeLoss="63.21"/>
+        <walk depart="75026.70" departPos="45.05" arrival="75493.80" arrivalPos="85.08" duration="467.10" routeLength="520.40" timeLoss="47.10" maxSpeed="1.24" waitingTime="0.00"/>
+        <stop duration="786.60" arrival="76280.40" arrivalPos="85.08" actType="P-Groceries"/>
+        <walk depart="76280.40" departPos="85.08" arrival="76704.30" arrivalPos="47.35" duration="423.90" routeLength="472.73" timeLoss="42.37" maxSpeed="1.24" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1919_66_tr" depart="76705.20" arrival="76856.40" arrivalPos="142.09" duration="151.20" routeLength="1202.65" timeLoss="61.20"/>
+        <stop duration="1.80" arrival="76858.20" arrivalPos="113.87" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1897_3_tr" depart="74265.30" departLane="-166122#5_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="77729.40" arrivalLane="-166122#5_1" arrivalPos="32.33" arrivalPosLat="1.15" arrivalSpeed="5.00" duration="3464.10" routeLength="4803.61" waitingTime="8.10" waitingCount="1" stopTime="3058.20" timeLoss="67.45" rerouteNo="0" devices="tripinfo_-1903_-1897_3_tr routing_-1903_-1897_3_tr person_-1903_-1897_3_tr" vType="motorcycle" speedFactor="0.87" vaporized=""/>
+    <personinfo id="-1903_-1897_3" depart="74265.30" type="pedestrian" speedFactor="1.05" duration="3464.10" waitingTime="0.90" timeLoss="118.97" traveltime="914.40">
+        <ride waitingTime="0.00" vehicle="-1903_-1897_3_tr" depart="74265.30" arrival="74473.20" arrivalPos="45.07" duration="207.90" routeLength="2267.26" timeLoss="38.06"/>
+        <walk depart="74473.20" departPos="45.07" arrival="74726.10" arrivalPos="30.34" duration="252.90" routeLength="330.89" timeLoss="25.87" maxSpeed="1.46" waitingTime="0.00"/>
+        <stop duration="2547.00" arrival="77273.10" arrivalPos="30.34" actType="P-Groceries"/>
+        <walk depart="77273.10" departPos="30.34" arrival="77528.70" arrivalPos="47.48" duration="255.60" routeLength="334.39" timeLoss="26.17" maxSpeed="1.46" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1897_3_tr" depart="77529.60" arrival="77727.60" arrivalPos="32.32" duration="198.00" routeLength="2536.33" timeLoss="28.86"/>
+        <stop duration="1.80" arrival="77729.40" arrivalPos="17.43" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1891_3_tr" depart="74202.30" departLane="--165866#0_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="78113.70" arrivalLane="--165866#0_1" arrivalPos="155.24" arrivalPosLat="0.00" arrivalSpeed="2.07" duration="3911.40" routeLength="4732.71" waitingTime="164.70" waitingCount="5" stopTime="3413.70" timeLoss="285.86" rerouteNo="1" devices="tripinfo_-1903_-1891_3_tr routing_-1903_-1891_3_tr person_-1903_-1891_3_tr" vType="passenger4" speedFactor="1.24" vaporized=""/>
+    <personinfo id="-1903_-1891_3" depart="74202.30" type="pedestrian" speedFactor="1.10" duration="3913.20" waitingTime="0.90" timeLoss="311.89" traveltime="748.80">
+        <ride waitingTime="0.00" vehicle="-1903_-1891_3_tr" depart="74202.30" arrival="74431.80" arrivalPos="36.26" duration="229.50" routeLength="2383.59" timeLoss="114.68"/>
+        <walk depart="74431.80" departPos="36.26" arrival="74556.90" arrivalPos="39.97" duration="125.10" routeLength="172.05" timeLoss="12.01" maxSpeed="1.52" waitingTime="0.00"/>
+        <stop duration="3161.70" arrival="77718.60" arrivalPos="39.97" actType="P-Groceries"/>
+        <walk depart="77718.60" departPos="39.97" arrival="77842.80" arrivalPos="38.66" duration="124.20" routeLength="167.62" timeLoss="14.03" maxSpeed="1.52" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1891_3_tr" depart="77843.70" arrival="78113.70" arrivalPos="155.24" duration="270.00" routeLength="2349.12" timeLoss="171.18"/>
+        <stop duration="1.80" arrival="78115.50" arrivalPos="118.61" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1897_-1903_4_tr" depart="75503.70" departLane="-169556_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="78403.50" arrivalLane="-169556_1" arrivalPos="84.37" arrivalPosLat="-1.15" arrivalSpeed="3.40" duration="2899.80" routeLength="6478.26" waitingTime="52.20" waitingCount="3" stopTime="2446.20" timeLoss="132.61" rerouteNo="0" devices="tripinfo_-1897_-1903_4_tr routing_-1897_-1903_4_tr person_-1897_-1903_4_tr" vType="motorcycle" speedFactor="1.25" vaporized=""/>
+    <personinfo id="-1897_-1903_4" depart="75503.70" type="pedestrian" speedFactor="0.93" duration="2901.60" waitingTime="0.90" timeLoss="181.79" traveltime="932.40">
+        <ride waitingTime="0.00" vehicle="-1897_-1903_4_tr" depart="75503.70" arrival="75726.90" arrivalPos="53.15" duration="223.20" routeLength="3561.75" timeLoss="55.29"/>
+        <walk depart="75726.90" departPos="53.15" arrival="76014.00" arrivalPos="113.56" duration="287.10" routeLength="334.13" timeLoss="29.61" maxSpeed="1.30" waitingTime="0.00"/>
+        <stop duration="1966.50" arrival="77980.50" arrivalPos="113.56" actType="P-Groceries"/>
+        <walk depart="77980.50" departPos="113.56" arrival="78170.40" arrivalPos="55.56" duration="189.90" routeLength="221.04" timeLoss="19.56" maxSpeed="1.30" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1897_-1903_4_tr" depart="78171.30" arrival="78403.50" arrivalPos="84.37" duration="232.20" routeLength="2916.51" timeLoss="77.32"/>
+        <stop duration="1.80" arrival="78405.30" arrivalPos="40.57" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1903_3_tr" depart="75739.50" departLane="--168934_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="78768.90" arrivalLane="--168934_1" arrivalPos="178.20" arrivalPosLat="0.00" arrivalSpeed="2.33" duration="3029.40" routeLength="2310.13" waitingTime="39.60" waitingCount="3" stopTime="2771.10" timeLoss="75.46" rerouteNo="0" devices="tripinfo_-1903_-1903_3_tr routing_-1903_-1903_3_tr person_-1903_-1903_3_tr" vType="passenger1" speedFactor="1.08" vaporized=""/>
+    <personinfo id="-1903_-1903_3" depart="75739.50" type="pedestrian" speedFactor="0.82" duration="3031.20" waitingTime="0.90" timeLoss="104.50" traveltime="546.30">
+        <ride waitingTime="0.00" vehicle="-1903_-1903_3_tr" depart="75739.50" arrival="75910.50" arrivalPos="53.26" duration="171.00" routeLength="1471.83" timeLoss="56.69"/>
+        <walk depart="75910.50" departPos="53.26" arrival="76054.50" arrivalPos="68.60" duration="144.00" routeLength="148.20" timeLoss="14.41" maxSpeed="1.14" waitingTime="0.00"/>
+        <stop duration="2482.20" arrival="78536.70" arrivalPos="68.60" actType="P-Groceries"/>
+        <walk depart="78536.70" departPos="68.60" arrival="78678.90" arrivalPos="55.56" duration="142.20" routeLength="145.90" timeLoss="14.62" maxSpeed="1.14" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1903_3_tr" depart="78679.80" arrival="78768.90" arrivalPos="178.20" duration="89.10" routeLength="838.30" timeLoss="18.77"/>
+        <stop duration="1.80" arrival="78770.70" arrivalPos="42.90" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1919_-1919_7_tr" depart="76097.70" departLane="-165313#3_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79046.10" arrivalLane="-165313#3_1" arrivalPos="119.57" arrivalPosLat="0.00" arrivalSpeed="2.07" duration="2948.40" routeLength="2782.38" waitingTime="66.60" waitingCount="3" stopTime="2672.10" timeLoss="119.72" rerouteNo="0" devices="tripinfo_-1919_-1919_7_tr routing_-1919_-1919_7_tr person_-1919_-1919_7_tr" vType="passenger2a" speedFactor="1.07" vaporized=""/>
+    <personinfo id="-1919_-1919_7" depart="76097.70" type="pedestrian" speedFactor="1.06" duration="2950.20" waitingTime="2.70" timeLoss="248.15" traveltime="1545.30">
+        <ride waitingTime="0.00" vehicle="-1919_-1919_7_tr" depart="76097.70" arrival="76274.10" arrivalPos="44.95" duration="176.40" routeLength="1991.28" timeLoss="65.86"/>
+        <walk depart="76274.10" departPos="44.95" arrival="76900.50" arrivalPos="34.11" duration="626.40" routeLength="828.72" timeLoss="61.37" maxSpeed="1.47" waitingTime="0.00"/>
+        <stop duration="1402.20" arrival="78302.70" arrivalPos="34.11" actType="P-Groceries"/>
+        <walk depart="78302.70" departPos="34.11" arrival="78943.50" arrivalPos="47.35" duration="640.80" routeLength="841.47" timeLoss="67.07" maxSpeed="1.47" waitingTime="1.80"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1919_7_tr" depart="78944.40" arrival="79046.10" arrivalPos="119.57" duration="101.70" routeLength="791.10" timeLoss="53.86"/>
+        <stop duration="1.80" arrival="79047.90" arrivalPos="35.73" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1919_-1891_6_tr" depart="76590.90" departLane="--166066#2_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79058.70" arrivalLane="--166066#2_1" arrivalPos="65.82" arrivalPosLat="1.15" arrivalSpeed="4.07" duration="2467.80" routeLength="6978.65" waitingTime="106.20" waitingCount="8" stopTime="1926.00" timeLoss="192.32" rerouteNo="0" devices="tripinfo_-1919_-1891_6_tr routing_-1919_-1891_6_tr person_-1919_-1891_6_tr" vType="motorcycle" speedFactor="0.99" vaporized=""/>
+    <personinfo id="-1919_-1891_6" depart="76590.90" type="pedestrian" speedFactor="0.85" duration="2469.60" waitingTime="0.90" timeLoss="236.71" traveltime="964.80">
+        <ride waitingTime="0.00" vehicle="-1919_-1891_6_tr" depart="76590.90" arrival="76828.50" arrivalPos="10.10" duration="237.60" routeLength="2978.19" timeLoss="73.42"/>
+        <walk depart="76828.50" departPos="10.10" arrival="77039.10" arrivalPos="62.87" duration="210.60" routeLength="220.62" timeLoss="23.21" maxSpeed="1.18" waitingTime="0.00"/>
+        <stop duration="1502.10" arrival="78541.20" arrivalPos="62.87" actType="P-Groceries"/>
+        <walk depart="78541.20" departPos="62.87" arrival="78751.80" arrivalPos="12.50" duration="210.60" routeLength="223.02" timeLoss="21.17" maxSpeed="1.18" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1891_6_tr" depart="78752.70" arrival="79058.70" arrivalPos="65.82" duration="306.00" routeLength="4000.46" timeLoss="118.90"/>
+        <stop duration="1.80" arrival="79060.50" arrivalPos="36.17" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1903_4_tr" depart="75771.00" departLane="--168419#1_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79075.80" arrivalLane="--168419#1_1" arrivalPos="187.23" arrivalPosLat="-1.15" arrivalSpeed="4.47" duration="3304.80" routeLength="4517.11" waitingTime="107.10" waitingCount="3" stopTime="2880.00" timeLoss="166.64" rerouteNo="0" devices="tripinfo_-1903_-1903_4_tr routing_-1903_-1903_4_tr person_-1903_-1903_4_tr" vType="motorcycle" speedFactor="1.06" vaporized=""/>
+    <personinfo id="-1903_-1903_4" depart="75771.00" type="pedestrian" speedFactor="0.99" duration="3306.60" waitingTime="3.60" timeLoss="205.38" traveltime="686.70">
+        <ride waitingTime="0.00" vehicle="-1903_-1903_4_tr" depart="75771.00" arrival="76015.80" arrivalPos="10.10" duration="244.80" routeLength="2888.32" timeLoss="101.57"/>
+        <walk depart="76015.80" departPos="10.10" arrival="76143.60" arrivalPos="56.21" duration="127.80" routeLength="151.29" timeLoss="17.99" maxSpeed="1.38" waitingTime="0.00"/>
+        <stop duration="2617.20" arrival="78760.80" arrivalPos="56.21" actType="P-Groceries"/>
+        <walk depart="78760.80" departPos="56.21" arrival="78893.10" arrivalPos="12.50" duration="132.30" routeLength="153.69" timeLoss="20.75" maxSpeed="1.38" waitingTime="2.70"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1903_4_tr" depart="78894.00" arrival="79075.80" arrivalPos="187.23" duration="181.80" routeLength="1628.79" timeLoss="65.07"/>
+        <stop duration="1.80" arrival="79077.60" arrivalPos="31.33" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1903_0_tr" depart="77602.50" departLane="--168419#1_1" departPos="5.10" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79190.10" arrivalLane="--168419#1_1" arrivalPos="187.23" arrivalPosLat="0.00" arrivalSpeed="1.88" duration="1587.60" routeLength="5330.20" waitingTime="68.40" waitingCount="4" stopTime="1097.10" timeLoss="140.50" rerouteNo="0" devices="tripinfo_-1903_-1903_0_tr routing_-1903_-1903_0_tr person_-1903_-1903_0_tr" vType="passenger2b" speedFactor="0.99" vaporized=""/>
+    <personinfo id="-1903_-1903_0" depart="77602.50" type="pedestrian" speedFactor="1.08" duration="1589.40" waitingTime="0.90" timeLoss="147.84" traveltime="567.90">
+        <ride waitingTime="0.00" vehicle="-1903_-1903_0_tr" depart="77602.50" arrival="77850.00" arrivalPos="119.87" duration="247.50" routeLength="2928.20" timeLoss="84.42"/>
+        <walk depart="77850.00" departPos="119.87" arrival="77886.90" arrivalPos="69.89" duration="36.90" routeLength="49.98" timeLoss="3.57" maxSpeed="1.50" waitingTime="0.00"/>
+        <stop duration="1018.80" arrival="78905.70" arrivalPos="69.89" actType="P-Groceries"/>
+        <walk depart="78905.70" departPos="69.89" arrival="78944.40" arrivalPos="122.27" duration="38.70" routeLength="52.39" timeLoss="3.77" maxSpeed="1.50" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1903_0_tr" depart="78945.30" arrival="79190.10" arrivalPos="187.23" duration="244.80" routeLength="2402.00" timeLoss="56.09"/>
+        <stop duration="1.80" arrival="79191.90" arrivalPos="148.38" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1903_15_tr" depart="77142.60" departLane="-169404#6_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79248.60" arrivalLane="-169404#6_1" arrivalPos="227.11" arrivalPosLat="1.15" arrivalSpeed="4.48" duration="2106.00" routeLength="1803.91" waitingTime="99.00" waitingCount="3" stopTime="1823.40" timeLoss="131.98" rerouteNo="0" devices="tripinfo_-1903_-1903_15_tr routing_-1903_-1903_15_tr person_-1903_-1903_15_tr" vType="motorcycle" speedFactor="0.97" vaporized=""/>
+    <personinfo id="-1903_-1903_15" depart="77142.60" type="pedestrian" speedFactor="1.26" duration="2107.80" waitingTime="0.90" timeLoss="152.97" traveltime="479.70">
+        <ride waitingTime="0.00" vehicle="-1903_-1903_15_tr" depart="77142.60" arrival="77347.80" arrivalPos="10.10" duration="205.20" routeLength="1036.27" timeLoss="115.71"/>
+        <walk depart="77347.80" departPos="10.10" arrival="77445.90" arrivalPos="42.48" duration="98.10" routeLength="153.48" timeLoss="10.26" maxSpeed="1.75" waitingTime="0.00"/>
+        <stop duration="1625.40" arrival="79071.30" arrivalPos="42.48" actType="P-Groceries"/>
+        <walk depart="79071.30" departPos="42.48" arrival="79168.50" arrivalPos="12.50" duration="97.20" routeLength="151.08" timeLoss="10.73" maxSpeed="1.75" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1903_15_tr" depart="79169.40" arrival="79248.60" arrivalPos="227.11" duration="79.20" routeLength="767.64" timeLoss="16.27"/>
+        <stop duration="1.80" arrival="79250.40" arrivalPos="92.52" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1932_-1932_2_tr" depart="76357.80" departLane="--168184_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79340.40" arrivalLane="--168184_1" arrivalPos="83.91" arrivalPosLat="0.81" arrivalSpeed="5.09" duration="2982.60" routeLength="3292.34" waitingTime="8.10" waitingCount="2" stopTime="2742.30" timeLoss="46.33" rerouteNo="1" devices="tripinfo_-1932_-1932_2_tr routing_-1932_-1932_2_tr person_-1932_-1932_2_tr" vType="motorcycle" speedFactor="0.92" vaporized=""/>
+    <personinfo id="-1932_-1932_2" depart="76357.80" type="pedestrian" speedFactor="0.86" duration="2984.40" waitingTime="0.90" timeLoss="92.69" traveltime="691.20">
+        <ride waitingTime="0.00" vehicle="-1932_-1932_2_tr" depart="76357.80" arrival="76476.60" arrivalPos="23.32" duration="118.80" routeLength="1951.38" timeLoss="21.18"/>
+        <walk depart="76476.60" departPos="23.32" arrival="76698.90" arrivalPos="26.86" duration="222.30" routeLength="239.25" timeLoss="21.90" maxSpeed="1.19" waitingTime="0.00"/>
+        <stop duration="2290.50" arrival="78989.40" arrivalPos="26.86" actType="P-Groceries"/>
+        <walk depart="78989.40" departPos="26.86" arrival="79216.20" arrivalPos="25.63" duration="226.80" routeLength="241.56" timeLoss="24.47" maxSpeed="1.19" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1932_-1932_2_tr" depart="79217.10" arrival="79340.40" arrivalPos="83.91" duration="123.30" routeLength="1340.96" timeLoss="25.15"/>
+        <stop duration="1.80" arrival="79342.20" arrivalPos="51.77" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1919_-1919_16_tr" depart="77141.70" departLane="-168816_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79638.30" arrivalLane="-168816_1" arrivalPos="238.59" arrivalPosLat="1.15" arrivalSpeed="3.39" duration="2496.60" routeLength="2195.96" waitingTime="114.30" waitingCount="4" stopTime="2209.50" timeLoss="165.10" rerouteNo="0" devices="tripinfo_-1919_-1919_16_tr routing_-1919_-1919_16_tr person_-1919_-1919_16_tr" vType="motorcycle" speedFactor="1.09" vaporized=""/>
+    <personinfo id="-1919_-1919_16" depart="77141.70" type="pedestrian" speedFactor="1.12" duration="2498.40" waitingTime="27.90" timeLoss="305.73" traveltime="1432.80">
+        <ride waitingTime="0.00" vehicle="-1919_-1919_16_tr" depart="77141.70" arrival="77296.50" arrivalPos="45.34" duration="154.80" routeLength="938.28" timeLoss="99.17"/>
+        <walk depart="77296.50" departPos="45.34" arrival="77819.40" arrivalPos="86.86" duration="522.90" routeLength="727.43" timeLoss="53.76" maxSpeed="1.55" waitingTime="0.00"/>
+        <access stop="-594114" depart="77819.40" arrival="77832.90" duration="13.50" routeLength="21.44"/>
+        <access stop="-594114" depart="77832.90" arrival="77838.30" duration="5.40" routeLength="9.52"/>
+        <walk depart="77838.30" departPos="129.11" arrival="77846.40" arrivalPos="118.16" duration="8.10" routeLength="10.96" timeLoss="1.04" maxSpeed="1.55" waitingTime="0.00"/>
+        <stop duration="1062.90" arrival="78909.30" arrivalPos="118.16" actType="P-Groceries"/>
+        <walk depart="78909.30" departPos="118.16" arrival="79503.30" arrivalPos="47.35" duration="594.00" routeLength="787.95" timeLoss="85.83" maxSpeed="1.55" waitingTime="27.00"/>
+        <ride waitingTime="0.90" vehicle="-1919_-1919_16_tr" depart="79504.20" arrival="79638.30" arrivalPos="238.59" duration="134.10" routeLength="1257.68" timeLoss="65.94"/>
+        <stop duration="1.80" arrival="79640.10" arrivalPos="191.41" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1897_-1932_1_tr" depart="76417.20" departLane="-167267#2_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79704.90" arrivalLane="-167267#2_1" arrivalPos="61.63" arrivalPosLat="0.00" arrivalSpeed="5.33" duration="3287.70" routeLength="3286.29" waitingTime="7.20" waitingCount="1" stopTime="3014.10" timeLoss="53.83" rerouteNo="0" devices="tripinfo_-1897_-1932_1_tr routing_-1897_-1932_1_tr person_-1897_-1932_1_tr" vType="motorcycle" speedFactor="0.95" vaporized=""/>
+    <personinfo id="-1897_-1932_1" depart="76417.20" type="pedestrian" speedFactor="0.94" duration="3289.50" waitingTime="0.90" timeLoss="130.88" traveltime="1035.90">
+        <ride waitingTime="0.00" vehicle="-1897_-1932_1_tr" depart="76417.20" arrival="76579.20" arrivalPos="89.53" duration="162.00" routeLength="1924.55" timeLoss="29.83"/>
+        <walk depart="76579.20" departPos="89.53" arrival="76956.30" arrivalPos="56.26" duration="377.10" routeLength="442.58" timeLoss="36.58" maxSpeed="1.30" waitingTime="0.00"/>
+        <stop duration="2250.90" arrival="79207.20" arrivalPos="56.26" actType="P-Groceries"/>
+        <walk depart="79207.20" departPos="56.26" arrival="79590.60" arrivalPos="91.93" duration="383.40" routeLength="445.71" timeLoss="40.47" maxSpeed="1.30" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1897_-1932_1_tr" depart="79591.50" arrival="79704.90" arrivalPos="61.63" duration="113.40" routeLength="1361.74" timeLoss="24.01"/>
+        <stop duration="1.80" arrival="79706.70" arrivalPos="19.40" actType="Home"/>
+    </personinfo>
+    <tripinfo id="-1903_-1949_0_tr" depart="78125.40" departLane="--165866#0_1" departPos="2.30" departPosLat="0.00" departSpeed="0.00" departDelay="0.00" arrival="79743.60" arrivalLane="--165866#0_1" arrivalPos="155.24" arrivalPosLat="1.15" arrivalSpeed="5.17" duration="1618.20" routeLength="6468.67" waitingTime="173.70" waitingCount="6" stopTime="1054.80" timeLoss="244.98" rerouteNo="0" devices="tripinfo_-1903_-1949_0_tr routing_-1903_-1949_0_tr person_-1903_-1949_0_tr" vType="motorcycle" speedFactor="1.07" vaporized=""/>
+    <personinfo id="-1903_-1949_0" depart="78125.40" type="pedestrian" speedFactor="1.05" duration="1620.00" waitingTime="0.90" timeLoss="317.47" traveltime="1289.70">
+        <ride waitingTime="0.00" vehicle="-1903_-1949_0_tr" depart="78125.40" arrival="78430.50" arrivalPos="10.09" duration="305.10" routeLength="3112.86" timeLoss="153.51"/>
+        <walk depart="78430.50" departPos="10.09" arrival="78794.10" arrivalPos="51.72" duration="363.60" routeLength="475.79" timeLoss="37.19" maxSpeed="1.46" waitingTime="0.00"/>
+        <stop duration="327.60" arrival="79121.70" arrivalPos="51.72" actType="P-Groceries"/>
+        <walk depart="79121.70" departPos="51.72" arrival="79482.60" arrivalPos="12.50" duration="360.90" routeLength="474.60" timeLoss="35.31" maxSpeed="1.46" waitingTime="0.00"/>
+        <ride waitingTime="0.90" vehicle="-1903_-1949_0_tr" depart="79483.50" arrival="79743.60" arrivalPos="155.24" duration="260.10" routeLength="3355.81" timeLoss="91.47"/>
+        <stop duration="1.80" arrival="79745.40" arrivalPos="47.47" actType="Home"/>
+    </personinfo>
+</tripinfos>

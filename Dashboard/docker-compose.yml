@@ -1,0 +1,83 @@
+version: '3.7'
+
+services:
+  # Orion Context Broker
+  orion:
+    image: fiware/orion:3.5.0
+    hostname: orion
+    container_name: fiware-orion
+    depends_on:
+      - mongo-db
+    networks:
+      - default
+    ports:
+      - "1026:1026"
+    command: -dbhost mongo-db -logLevel DEBUG
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1026/version"]
+      interval: 5s
+      timeout: 1s
+      retries: 5
+
+  # MongoDB (database for Orion)
+  mongo-db:
+    image: mongo:4.4
+    hostname: mongo-db
+    container_name: fiware-mongo
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"
+    networks:
+      - default
+    volumes:
+      - mongo-db:/data/db
+
+  # QuantumLeap
+  quantumleap:
+    image: orchestracities/quantumleap:0.8.2
+    hostname: quantumleap
+    container_name: fiware-quantumleap
+    depends_on:
+      - cratedb
+      - orion
+    networks:
+      - default
+    ports:
+      - "8668:8668"
+    environment:
+      - CRATE_HOST=cratedb
+      - ORION_URL=http://orion:1026
+
+  # CrateDB (database for QuantumLeap)
+  cratedb:
+    image: crate:5.3.3
+    hostname: cratedb
+    container_name: fiware-cratedb
+    ports:
+      - "4200:4200" # CrateDB Admin UI
+      - "5432:5432" # PostgreSQL Wire Protocol
+    networks:
+      - default
+    command: crate -Cauth.host_based.enabled=false
+        -Ccluster.name=democluster -Chttp.cors.enabled=true -Chttp.cors.allow-origin="*"
+    volumes:
+      - cratedb:/data
+
+  # Grafana
+  grafana:
+    image: grafana/grafana:8.3.3
+    container_name: fiware-grafana
+    depends_on:
+      - cratedb
+    ports:
+      - "3000:3000"
+    networks:
+      - default
+    volumes:
+      - grafana:/var/lib/grafana
+
+volumes:
+  mongo-db:
+  cratedb:
+  grafana:

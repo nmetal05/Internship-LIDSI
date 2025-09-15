@@ -1,0 +1,975 @@
+{
+  "seed": 44,
+  "maxNumTry": 10,
+  "outputPrefix": "osm_activitygen",
+  "mergeRoutesFiles": true,
+  "sumocfg": "duarouter.sumocfg",
+  "SUMOnetFile": "osm.net.xml",
+  "SUMOadditionals": {
+    "vTypes": "basic.vType.xml",
+    "parkings": "osm_complete_parking_areas.add.xml"
+  },
+  "intermodalOptions": {
+    "parkingAreaBlacklist": [],
+    "vehicleAllowedParking": [
+      "passenger",
+      "motorcycle",
+      "evehicle"
+    ],
+    "taxiFleetSize": 10,
+    "taxiFleetInitialTAZs": [],
+    "taxiStands": "osm_taxi_stands.add.xml",
+    "taxiStandsBlacklist": [],
+    "modeSelection": "PROBABILITY"
+  },
+  "population": {
+    "entities": 300,
+    "tazDefinition": "osm_taz.xml",
+    "tazWeights": "osm_taz_weight.csv",
+    "buildingsWeight": "buildings/",
+    "PoIsDefinition": "TBD"
+  },
+  "taz": {
+    "HH Nord": [
+      "HH Nord"
+    ],
+    "HH Sud": [
+      "HH Sud"
+    ],
+    "CFC": [
+      "CFC"
+    ],
+    "Oulfa": [
+      "Oulfa"
+    ],
+    "Hay Essalam": [
+      "Hay Essalam"
+    ],
+    "Lissasfa Nord": [
+      "Lissasfa Nord"
+    ]
+  },
+  "activities": {
+    "Home": {
+      "start": {},
+      "duration": {
+        "m": 1800,
+        "s": 900
+      }
+    },
+    "P-Groceries": {
+      "start": {
+        "m": 82800,
+        "s": 3600
+      },
+      "duration": {
+        "m": 1800,
+        "s": 600
+      }
+    }
+  },
+  "slices": {
+    "HH Nord_HH Nord": {
+      "perc": 0.0154,
+      "loc_origin": "HH Nord",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Nord_HH Sud": {
+      "perc": 0.0207,
+      "loc_origin": "HH Nord",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Nord_CFC": {
+      "perc": 0.0168,
+      "loc_origin": "HH Nord",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Nord_Oulfa": {
+      "perc": 0.0044,
+      "loc_origin": "HH Nord",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Nord_Hay Essalam": {
+      "perc": 0.003,
+      "loc_origin": "HH Nord",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Nord_Lissasfa Nord": {
+      "perc": 0.0212,
+      "loc_origin": "HH Nord",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_HH Nord": {
+      "perc": 0.0177,
+      "loc_origin": "HH Sud",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_HH Sud": {
+      "perc": 0.1054,
+      "loc_origin": "HH Sud",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_CFC": {
+      "perc": 0.02,
+      "loc_origin": "HH Sud",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_Oulfa": {
+      "perc": 0.0186,
+      "loc_origin": "HH Sud",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_Hay Essalam": {
+      "perc": 0.0064,
+      "loc_origin": "HH Sud",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "HH Sud_Lissasfa Nord": {
+      "perc": 0.0197,
+      "loc_origin": "HH Sud",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_HH Nord": {
+      "perc": 0.0216,
+      "loc_origin": "CFC",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_HH Sud": {
+      "perc": 0.0267,
+      "loc_origin": "CFC",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_CFC": {
+      "perc": 0.0934,
+      "loc_origin": "CFC",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_Oulfa": {
+      "perc": 0.0146,
+      "loc_origin": "CFC",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_Hay Essalam": {
+      "perc": 0.0076,
+      "loc_origin": "CFC",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "CFC_Lissasfa Nord": {
+      "perc": 0.0317,
+      "loc_origin": "CFC",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_HH Nord": {
+      "perc": 0.0039,
+      "loc_origin": "Oulfa",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_HH Sud": {
+      "perc": 0.0142,
+      "loc_origin": "Oulfa",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_CFC": {
+      "perc": 0.0103,
+      "loc_origin": "Oulfa",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_Oulfa": {
+      "perc": 0.0239,
+      "loc_origin": "Oulfa",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_Hay Essalam": {
+      "perc": 0.009,
+      "loc_origin": "Oulfa",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Oulfa_Lissasfa Nord": {
+      "perc": 0.0142,
+      "loc_origin": "Oulfa",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_HH Nord": {
+      "perc": 0.0023,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_HH Sud": {
+      "perc": 0.0061,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_CFC": {
+      "perc": 0.0066,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_Oulfa": {
+      "perc": 0.012,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_Hay Essalam": {
+      "perc": 0.0244,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Hay Essalam_Lissasfa Nord": {
+      "perc": 0.0123,
+      "loc_origin": "Hay Essalam",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_HH Nord": {
+      "perc": 0.0102,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "HH Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_HH Sud": {
+      "perc": 0.0209,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "HH Sud",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_CFC": {
+      "perc": 0.0309,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "CFC",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_Oulfa": {
+      "perc": 0.0239,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "Oulfa",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_Hay Essalam": {
+      "perc": 0.0382,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "Hay Essalam",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "Lissasfa Nord_Lissasfa Nord": {
+      "perc": 0.272,
+      "loc_origin": "Lissasfa Nord",
+      "loc_primary": "Lissasfa Nord",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "minEdgeAllowed": 30.0,
+  "stopBufferDistance": 20.0
+}

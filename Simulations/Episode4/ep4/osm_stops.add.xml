@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-27 16:54:37 by Eclipse SUMO netconvert Version c915cd253
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/home/dahou/sumo/data/typemap/osmNetconvert.typ.xml,/home/dahou/sumo/data/typemap/osmNetconvertBicycle.typ.xml,/home/dahou/sumo/data/typemap/osmNetconvertPedestrians.typ.xml"/>
+        <osm-files value="H2ST9_cp.osm"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+        <parking-output value="osm_parking.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.components value="1"/>
+        <remove-edges.isolated value="true"/>
+    </edge_removal>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="false"/>
+        <no-turnarounds.tls value="false"/>
+        <no-turnarounds.geometry value="true"/>
+        <no-turnarounds.except-deadend value="true"/>
+        <no-turnarounds.except-turnlane value="false"/>
+        <no-turnarounds.fringe value="true"/>
+        <junctions.join value="true"/>
+        <junctions.join-dist value="10"/>
+        <junctions.join-same value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.internal-link-detail value="5"/>
+        <check-lane-foes.roundabout value="true"/>
+    </junctions>
+
+    <pedestrian>
+        <sidewalks.guess value="false"/>
+        <sidewalks.guess.max-speed value="13.89"/>
+        <sidewalks.guess.min-speed value="5.8"/>
+        <sidewalks.guess.from-permissions value="false"/>
+        <crossings.guess value="true"/>
+        <crossings.guess.speed-threshold value="13.89"/>
+        <walkingareas value="false"/>
+        <walkingareas.join-dist value="15"/>
+    </pedestrian>
+
+    <bicycle>
+        <bikelanes.guess value="false"/>
+        <bikelanes.guess.max-speed value="22.22"/>
+        <bikelanes.guess.min-speed value="5.8"/>
+        <bikelanes.guess.from-permissions value="false"/>
+    </bicycle>
+
+    <railway>
+        <railway.signals.discard value="false"/>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.connect-straight value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+        <railway.topology.all-bidi value="false"/>
+        <railway.topology.direction-priority value="false"/>
+        <railway.access-distance value="150"/>
+        <railway.max-accesses value="5"/>
+        <railway.access-factor value="1.5"/>
+    </railway>
+
+    <formats>
+        <osm.skip-duplicates-check value="false"/>
+        <osm.elevation value="true"/>
+        <osm.stop-output.length value="25"/>
+        <osm.stop-output.length.bus value="15"/>
+        <osm.stop-output.length.tram value="25"/>
+        <osm.stop-output.length.train value="200"/>
+        <osm.all-attributes value="false"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</netconvertConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-629117" name="Stade Père-Jégo" lane="-178000#1_1" startPos="41.28" endPos="56.28" friendlyPos="true"/>
+    <busStop id="-629239" name="Oulfa" lane="-181028#0_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-629455" name="Hay El Hana" lane="-180475_1" startPos="64.94" endPos="79.94" friendlyPos="true"/>
+    <busStop id="-629552" name="Oued Oum Rabia" lane="-181310#12_0" startPos="21.03" endPos="36.03" friendlyPos="true">
+        <access lane="-177796#2_0" pos="36.63" length="16.11" friendlyPos="1"/>
+        <access lane="-177796#3_0" pos="0.00" length="17.31" friendlyPos="1"/>
+        <access lane="-177959#1_0" pos="0.20" length="4.46" friendlyPos="1"/>
+        <access lane="-177959#2_0" pos="0.00" length="6.55" friendlyPos="1"/>
+        <access lane="-177959#3_0" pos="0.00" length="11.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-629589" name="École Elibrahimi" lane="-179094#2_1" startPos="165.63" endPos="180.63" friendlyPos="true"/>
+    <busStop id="-629635" name="Lycée Fechtali" lane="-177915#1_1" startPos="0.00" endPos="8.01" friendlyPos="true"/>
+    <busStop id="-629689" name="L&apos;Academie" lane="-177456_1" startPos="73.16" endPos="88.16" friendlyPos="true"/>
+    <busStop id="-629960" name="Oued Laou" lane="-181310#21_0" startPos="25.04" endPos="40.04" friendlyPos="true">
+        <access lane="--177975#1_0" pos="0.00" length="20.44" friendlyPos="1"/>
+        <access lane="-177624#2_0" pos="9.32" length="24.13" friendlyPos="1"/>
+        <access lane="-177975#1_0" pos="12.66" length="20.99" friendlyPos="1"/>
+        <access lane="-178285#2_0" pos="19.12" length="17.34" friendlyPos="1"/>
+        <access lane="-178285#3_0" pos="0.00" length="18.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-630000" name="Terminus Hay Hassani" lane="-181508_1" startPos="38.64" endPos="53.64" friendlyPos="true"/>
+    <busStop id="-630154" name="Café Tafoukt" lane="--179071#5_1" startPos="12.15" endPos="27.15" friendlyPos="true" lines="L63 L19"/>
+    <busStop id="-630250" name="Souk Ould Mina" lane="--178009#12_1" startPos="0.00" endPos="15.00" friendlyPos="true" lines="L143"/>
+    <busStop id="-630250@-2086" name="Souk Ould Mina" lane="-178009#12_1" startPos="134.58" endPos="149.58" friendlyPos="true"/>
+    <busStop id="-630256" name="Tribunal" lane="-181660#2_1" startPos="8.38" endPos="23.38" friendlyPos="true"/>
+    <busStop id="-630498" name="Abdellah Ben Cherif" lane="-181475#30_0" startPos="47.11" endPos="72.11" friendlyPos="true" lines="T2">
+        <access lane="--180038#0_0" pos="101.26" length="17.62" friendlyPos="1"/>
+        <access lane="-178534#7_0" pos="15.04" length="91.29" friendlyPos="1"/>
+        <access lane="-178534#8_0" pos="0.00" length="91.13" friendlyPos="1"/>
+        <access lane="-180038#0_0" pos="59.61" length="5.02" friendlyPos="1"/>
+        <access lane="-180388#0_0" pos="0.00" length="107.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-630610" name="Sidi Al Khadir" lane="-177678#0_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-630637" name="Moulouya" lane="-180605#3_0" startPos="101.65" endPos="116.65" friendlyPos="true">
+        <access lane="--179400#6_0" pos="0.00" length="16.93" friendlyPos="1"/>
+        <access lane="-179400#6_0" pos="38.27" length="21.33" friendlyPos="1"/>
+        <access lane="-181030_0" pos="107.33" length="28.18" friendlyPos="1"/>
+        <access lane="-181293#2_0" pos="35.65" length="13.16" friendlyPos="1"/>
+        <access lane="-181293#3_0" pos="0.00" length="19.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-630708" name="Anfa Clubs" lane="-178073#43_0" startPos="64.71" endPos="89.71" friendlyPos="true" lines="T2">
+        <access lane="--180234#8_0" pos="63.73" length="17.56" friendlyPos="1"/>
+        <access lane="--181628#8_0" pos="64.18" length="115.14" friendlyPos="1"/>
+        <access lane="-177724#1_0" pos="200.27" length="102.45" friendlyPos="1"/>
+        <access lane="-177724#4_0" pos="0.00" length="101.72" friendlyPos="1"/>
+        <access lane="-180234#8_0" pos="77.12" length="4.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-631403" name="Sidi Abderrahmane" lane="-178073#8_0" startPos="39.85" endPos="64.85" friendlyPos="true" lines="T2">
+        <access lane="-178087_0" pos="76.33" length="46.03" friendlyPos="1"/>
+        <access lane="-180141#5_0" pos="25.20" length="15.26" friendlyPos="1"/>
+        <access lane="-181154#2_0" pos="27.71" length="26.34" friendlyPos="1"/>
+        <access lane="-181222#1_0" pos="0.20" length="46.09" friendlyPos="1"/>
+        <access lane="-181222#2_0" pos="0.00" length="45.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-631631" name="Anfa Park" lane="-178073#35_0" startPos="185.00" endPos="210.00" friendlyPos="true" lines="T2">
+        <access lane="-177731#0_0" pos="21.87" length="7.81" friendlyPos="1"/>
+        <access lane="-178171#0_0" pos="76.34" length="20.40" friendlyPos="1"/>
+        <access lane="-180067#16_0" pos="52.74" length="39.36" friendlyPos="1"/>
+        <access lane="-180583#4_0" pos="52.57" length="44.64" friendlyPos="1"/>
+        <access lane="-181571#2_0" pos="20.48" length="12.65" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-632301" name="Groupe Scolaire Al Amjad" lane="--177764#1_1" startPos="25.31" endPos="40.31" friendlyPos="true" lines="L68"/>
+    <busStop id="-632331" name="Lycée Fechtali" lane="--181264#0_1" startPos="35.80" endPos="50.80" friendlyPos="true" lines="L143"/>
+    <busStop id="-632331@-2076" name="Lycée Fechtali" lane="-178629#3_1" startPos="22.03" endPos="37.03" friendlyPos="true"/>
+    <busStop id="-632608" name="Cité de l&apos;Air" lane="-178073#18_0" startPos="25.41" endPos="50.41" friendlyPos="true" lines="T2">
+        <access lane="-177364#5_0" pos="3.00" length="62.58" friendlyPos="1"/>
+        <access lane="-177763#1_0" pos="0.20" length="62.16" friendlyPos="1"/>
+        <access lane="-180217#11_0" pos="0.00" length="63.42" friendlyPos="1"/>
+        <access lane="-180217#2_0" pos="121.91" length="61.66" friendlyPos="1"/>
+        <access lane="-180217#3_0" pos="2.56" length="60.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-632631" name="École Al Ajial" lane="-177374#0_1" startPos="17.67" endPos="32.67" friendlyPos="true"/>
+    <busStop id="-632752" name="Facultés - Route d&apos;El Jadida" lane="-178820#2_1" startPos="187.29" endPos="202.29" friendlyPos="true"/>
+    <busStop id="-633153" name="École Al Ajial" lane="-177360#1_1" startPos="138.82" endPos="153.82" friendlyPos="true"/>
+    <busStop id="-633672" name="ISTA Afghanistan" lane="--179852#0_1" startPos="21.91" endPos="36.91" friendlyPos="true" lines="L301 L63"/>
+    <busStop id="-633967" name="Hay Hassani T2" lane="--181340#3_1" startPos="10.85" endPos="25.85" friendlyPos="true" lines="L301"/>
+    <busStop id="-634036" name="Dar Lhamra" lane="--178009#2_1" startPos="62.14" endPos="77.14" friendlyPos="true" lines="L50 L9E L143"/>
+    <busStop id="-634109" name="Résidences Firdaouss" lane="-181659#2_1" startPos="144.86" endPos="159.86" friendlyPos="true"/>
+    <busStop id="-634407" name="Cité Police Ibn Sina" lane="--181653#5_1" startPos="10.35" endPos="25.35" friendlyPos="true" lines="L143"/>
+    <busStop id="-634407@-2086" name="Cité Police Ibn Sina" lane="-181653#5_1" startPos="28.78" endPos="43.78" friendlyPos="true"/>
+    <busStop id="-635191" name="Terminus Mosquée Ferrara" lane="-179855_1" startPos="112.45" endPos="127.45" friendlyPos="true"/>
+    <busStop id="-635306" name="Place Financière" lane="-178073#32_0" startPos="66.26" endPos="91.26" friendlyPos="true" lines="T2">
+        <access lane="-178057#5_0" pos="78.73" length="17.30" friendlyPos="1"/>
+        <access lane="-178970#20_0" pos="40.21" length="32.86" friendlyPos="1"/>
+        <access lane="-179493#2_0" pos="22.55" length="43.61" friendlyPos="1"/>
+        <access lane="-180694#4_0" pos="71.97" length="26.63" friendlyPos="1"/>
+        <access lane="-180879#3_0" pos="71.95" length="29.87" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-635568" name="Mosquée El Fath" lane="-180391#1_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-635568@-2076" name="Mosquée El Fath" lane="--180391#1_1" startPos="26.55" endPos="41.55" friendlyPos="true" lines="L109"/>
+    <busStop id="-635710" name="École Elbennay" lane="--178367#1_1" startPos="32.40" endPos="47.40" friendlyPos="true" lines="L68 L143"/>
+    <busStop id="-635710@-2076" name="École Elbennay" lane="-178367#1_1" startPos="7.22" endPos="22.22" friendlyPos="true"/>
+    <busStop id="-636293" name="Dar Lhamra" lane="--178009#2_1" startPos="64.17" endPos="79.17" friendlyPos="true" lines="L143"/>
+    <busStop id="-636293@-2086" name="Dar Lhamra" lane="-178009#2_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-636312" name="Moulouya" lane="-181310#28_0" startPos="102.43" endPos="117.43" friendlyPos="true">
+        <access lane="--179400#6_0" pos="0.00" length="32.22" friendlyPos="1"/>
+        <access lane="-179400#6_0" pos="38.27" length="34.95" friendlyPos="1"/>
+        <access lane="-181030_0" pos="106.75" length="12.91" friendlyPos="1"/>
+        <access lane="-181293#2_0" pos="35.65" length="28.10" friendlyPos="1"/>
+        <access lane="-181293#3_0" pos="0.00" length="30.95" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-636324" name="Hay Salam" lane="-180991#0_1" startPos="90.82" endPos="105.82" friendlyPos="true"/>
+    <busStop id="-636445" name="Boulevard des Facultés" lane="--178768#0_1" startPos="1.68" endPos="16.68" friendlyPos="true" lines="L9E"/>
+    <busStop id="-636467" name="Les Musees" lane="-180605#25_0" startPos="217.26" endPos="232.26" friendlyPos="true">
+        <access lane="-177946#0_0" pos="0.00" length="66.47" friendlyPos="1"/>
+        <access lane="-178068#2_0" pos="37.38" length="15.14" friendlyPos="1"/>
+        <access lane="-178172#8_0" pos="171.43" length="12.18" friendlyPos="1"/>
+        <access lane="-178534#8_0" pos="52.49" length="32.65" friendlyPos="1"/>
+        <access lane="-180879#0_0" pos="19.87" length="61.32" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-636762" name="Pharmacie Tam" lane="-178526#0_1" startPos="28.09" endPos="43.09" friendlyPos="true"/>
+    <busStop id="-637075" name="Polyclinique CNSS Rabia" lane="-180843#6_1" startPos="226.95" endPos="241.95" friendlyPos="true"/>
+    <busStop id="-637119" name="Café Kairaouan" lane="--181653#13_1" startPos="0.00" endPos="15.00" friendlyPos="true" lines="L50"/>
+    <busStop id="-637264" name="Carr. Schneider" lane="-180843#3_1" startPos="111.00" endPos="126.00" friendlyPos="true"/>
+    <busStop id="-637332" name="Groupe Scolaire Al Amjad" lane="--177764#1_1" startPos="24.05" endPos="39.05" friendlyPos="true" lines="L9E L68"/>
+    <busStop id="-637416" name="Oued Laou" lane="-180605#10_0" startPos="489.38" endPos="504.38" friendlyPos="true">
+        <access lane="-177624#1_0" pos="75.89" length="20.42" friendlyPos="1"/>
+        <access lane="-177624#2_0" pos="6.27" length="10.24" friendlyPos="1"/>
+        <access lane="-178693_0" pos="35.57" length="15.70" friendlyPos="1"/>
+        <access lane="-179788#2_0" pos="15.02" length="21.80" friendlyPos="1"/>
+        <access lane="-180469_0" pos="0.00" length="18.50" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-637686" name="Hay Salam" lane="-180765#1_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-637728" name="Caf" lane="-181674#3_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-637986" name="Beauséjour" lane="-181475#1_0" startPos="30.57" endPos="55.57" friendlyPos="true" lines="T2">
+        <access lane="--177823_0" pos="37.17" length="29.15" friendlyPos="1"/>
+        <access lane="-177823_0" pos="0.00" length="32.89" friendlyPos="1"/>
+        <access lane="-177940#10_0" pos="0.07" length="24.00" friendlyPos="1"/>
+        <access lane="-177940#9_0" pos="63.13" length="31.23" friendlyPos="1"/>
+        <access lane="-177984#1_0" pos="43.06" length="17.32" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-638160" name="Marjane Hay Hassani" lane="--181653#5_1" startPos="11.81" endPos="26.81" friendlyPos="true" lines="L50 L143"/>
+    <busStop id="-638673" name="Abdellah Ben Cherif" lane="-178073#24_0" startPos="122.26" endPos="147.26" friendlyPos="true" lines="T2">
+        <access lane="--180038#0_0" pos="101.16" length="13.22" friendlyPos="1"/>
+        <access lane="-178534#7_0" pos="15.04" length="89.49" friendlyPos="1"/>
+        <access lane="-178534#8_0" pos="2.34" length="88.96" friendlyPos="1"/>
+        <access lane="-180038#0_0" pos="59.70" length="0.62" friendlyPos="1"/>
+        <access lane="-180388#0_0" pos="0.00" length="105.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-639018" name="Cité Police Ibn Sina" lane="--178402#4_1" startPos="0.00" endPos="15.00" friendlyPos="true" lines="L9E"/>
+    <busStop id="-639358" name="Beauséjour" lane="-178073#53_0" startPos="64.65" endPos="89.65" friendlyPos="true" lines="T2">
+        <access lane="--177823_0" pos="37.17" length="20.64" friendlyPos="1"/>
+        <access lane="-177823_0" pos="0.00" length="26.36" friendlyPos="1"/>
+        <access lane="-177940#10_0" pos="0.83" length="15.13" friendlyPos="1"/>
+        <access lane="-177940#9_0" pos="63.13" length="26.05" friendlyPos="1"/>
+        <access lane="-177984#1_0" pos="42.25" length="26.19" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-639363" name="Facultés Terminus" lane="-178004#10_0" startPos="0.00" endPos="25.00" friendlyPos="true" lines="T1">
+        <access lane="--179123#1_0" pos="0.00" length="49.47" friendlyPos="1"/>
+        <access lane="-178315#1_0" pos="86.85" length="21.44" friendlyPos="1"/>
+        <access lane="-179123#1_0" pos="95.20" length="51.35" friendlyPos="1"/>
+        <access lane="-179349#4_0" pos="129.09" length="9.52" friendlyPos="1"/>
+        <access lane="-180156_0" pos="21.19" length="57.36" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-639573" name="C.A. Tensift" lane="--178367#10_1" startPos="14.37" endPos="29.37" friendlyPos="true" lines="L68 L143"/>
+    <busStop id="-639989" name="Hay Hassani" lane="-179559#7_1" startPos="0.00" endPos="3.34" friendlyPos="true"/>
+    <busStop id="-640677" name="Café Atlas" lane="--179530_1" startPos="59.26" endPos="74.26" friendlyPos="true" lines="L109"/>
+    <busStop id="-640755" name="Terminus Mosquée Ferrara" lane="-178024_1" startPos="21.09" endPos="36.09" friendlyPos="true"/>
+    <busStop id="-640798" name="Rond Point Chahdia" lane="-180283#2_1" startPos="1.83" endPos="16.83" friendlyPos="true"/>
+    <busStop id="-640970" name="Anfa Park" lane="-181475#19_0" startPos="33.83" endPos="58.83" friendlyPos="true" lines="T2">
+        <access lane="-177731#0_0" pos="21.97" length="15.95" friendlyPos="1"/>
+        <access lane="-178171#0_0" pos="76.11" length="12.27" friendlyPos="1"/>
+        <access lane="-180067#16_0" pos="52.60" length="47.50" friendlyPos="1"/>
+        <access lane="-180583#4_0" pos="52.41" length="52.77" friendlyPos="1"/>
+        <access lane="-181571#2_0" pos="20.61" length="20.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-641485" name="Facultés" lane="-181489#2_0" startPos="93.85" endPos="118.85" friendlyPos="true" lines="T1">
+        <access lane="--179123#1_0" pos="0.00" length="54.42" friendlyPos="1"/>
+        <access lane="--180156_0" pos="62.60" length="56.53" friendlyPos="1"/>
+        <access lane="-178315#1_0" pos="85.22" length="16.10" friendlyPos="1"/>
+        <access lane="-179349#4_0" pos="131.01" length="14.65" friendlyPos="1"/>
+        <access lane="-180156_0" pos="22.31" length="51.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-641493" name="Derb Jamila" lane="-180545#5_1" startPos="0.00" endPos="3.80" friendlyPos="true"/>
+    <busStop id="-641652" name="Les Musees" lane="-181310#6_0" startPos="50.07" endPos="65.07" friendlyPos="true">
+        <access lane="-177946#0_0" pos="0.00" length="66.41" friendlyPos="1"/>
+        <access lane="-178068#1_0" pos="60.81" length="65.60" friendlyPos="1"/>
+        <access lane="-178068#2_0" pos="32.12" length="32.01" friendlyPos="1"/>
+        <access lane="-178172#8_0" pos="166.43" length="29.22" friendlyPos="1"/>
+        <access lane="-178534#8_0" pos="57.58" length="15.67" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-641870" name="École Elibrahimi" lane="-178517#1_1" startPos="54.15" endPos="69.15" friendlyPos="true"/>
+    <busStop id="-642135" name="Stade Hay Hassani" lane="-179261#2_1" startPos="120.04" endPos="135.04" friendlyPos="true"/>
+    <busStop id="-642554" name="Anfa Clubs" lane="-181475#11_0" startPos="54.26" endPos="79.26" friendlyPos="true" lines="T2">
+        <access lane="--180234#8_0" pos="65.11" length="14.01" friendlyPos="1"/>
+        <access lane="--180409#3_0" pos="68.27" length="118.22" friendlyPos="1"/>
+        <access lane="-177724#1_0" pos="200.27" length="103.78" friendlyPos="1"/>
+        <access lane="-177724#4_0" pos="0.00" length="104.76" friendlyPos="1"/>
+        <access lane="-180234#8_0" pos="75.74" length="1.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-642560" name="Angle Oum Rabia/Naciri" lane="-180244_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-643641" name="Tribunal" lane="-181457#3_1" startPos="3.63" endPos="18.63" friendlyPos="true"/>
+    <busStop id="-643745" name="Sidi Al Khadir" lane="-177678#0_1" startPos="12.31" endPos="27.31" friendlyPos="true"/>
+    <busStop id="-644063" name="Résidences Firdaouss" lane="-180285#1_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-644297" name="Mosquée El Fath" lane="-180391#1_1" startPos="7.55" endPos="22.55" friendlyPos="true"/>
+    <busStop id="-644329" name="Terminus Sidi Al-Khadir" lane="-177678#0_1" startPos="15.52" endPos="30.52" friendlyPos="true"/>
+    <busStop id="-644367" name="Laymoune" lane="-181489#10_0" startPos="296.89" endPos="321.89" friendlyPos="true" lines="T1">
+        <access lane="--180005#3_0" pos="0.00" length="23.63" friendlyPos="1"/>
+        <access lane="-177557#0_0" pos="0.00" length="28.39" friendlyPos="1"/>
+        <access lane="-178852_0" pos="0.00" length="30.41" friendlyPos="1"/>
+        <access lane="-180005#3_0" pos="50.66" length="19.15" friendlyPos="1"/>
+        <access lane="-180944_0" pos="65.97" length="22.52" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-644616" name="Carr. Schneider" lane="-179664#8_1" startPos="46.04" endPos="61.04" friendlyPos="true"/>
+    <busStop id="-644909" name="Café Kairaouan" lane="--181653#13_1" startPos="0.00" endPos="15.00" friendlyPos="true" lines="L143"/>
+    <busStop id="-645143" name="Laymoune" lane="-178004#0_0" startPos="77.05" endPos="102.05" friendlyPos="true" lines="T1">
+        <access lane="--177557#0_0" pos="45.24" length="25.92" friendlyPos="1"/>
+        <access lane="-177557#0_0" pos="0.00" length="21.43" friendlyPos="1"/>
+        <access lane="-178852_0" pos="0.00" length="25.00" friendlyPos="1"/>
+        <access lane="-180005#3_0" pos="50.66" length="26.11" friendlyPos="1"/>
+        <access lane="-180944_0" pos="65.97" length="27.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-645144" name="Café Bouchiki" lane="-179071#11_1" startPos="0.00" endPos="6.86" friendlyPos="true"/>
+    <busStop id="-645244" name="Polyclinique CNSS Rabia" lane="-179664#3_1" startPos="8.51" endPos="23.51" friendlyPos="true"/>
+    <busStop id="-645324" name="Oued Oum Rabia" lane="-180605#19_0" startPos="0.00" endPos="15.00" friendlyPos="true">
+        <access lane="-177497#8_0" pos="55.61" length="15.72" friendlyPos="1"/>
+        <access lane="-177497#9_0" pos="4.35" length="11.20" friendlyPos="1"/>
+        <access lane="-177959#2_0" pos="0.20" length="12.64" friendlyPos="1"/>
+        <access lane="-177959#3_0" pos="0.20" length="9.35" friendlyPos="1"/>
+        <access lane="-178172#1_0" pos="3.24" length="13.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-645667" name="Terminus Hay Salam" lane="-180187#0_1" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-646024" name="Stade Hay Hassani" lane="--179071#10_1" startPos="0.00" endPos="4.09" friendlyPos="true" lines="72"/>
+    <busStop id="-646054" name="Caf" lane="-178537#5_1" startPos="233.06" endPos="248.06" friendlyPos="true"/>
+    <busStop id="-646132" name="Oued Beht" lane="-181310#23_0" startPos="422.13" endPos="437.13" friendlyPos="true">
+        <access lane="-177915#0_0" pos="21.20" length="24.48" friendlyPos="1"/>
+        <access lane="-178629#3_0" pos="82.75" length="20.30" friendlyPos="1"/>
+        <access lane="-178629#4_0" pos="0.00" length="37.58" friendlyPos="1"/>
+        <access lane="-180102#1_0" pos="0.00" length="48.37" friendlyPos="1"/>
+        <access lane="-180416_0" pos="0.00" length="40.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-646556" name="Mosquée Afghanistan" lane="--177603#2_1" startPos="56.73" endPos="71.73" friendlyPos="true" lines="L63 L19"/>
+    <busStop id="-646556@-2064" name="Mosquée Afghanistan" lane="-177603#2_1" startPos="2.84" endPos="17.84" friendlyPos="true"/>
+    <busStop id="-646629" name="École Elbennay" lane="--178367#1_1" startPos="31.65" endPos="46.65" friendlyPos="true" lines="L68 L143"/>
+    <busStop id="-646707" name="Terminus Hay Salam" lane="-179063#3_1" startPos="33.56" endPos="48.56" friendlyPos="true"/>
+    <busStop id="-646730" name="Hay Hassani" lane="-181475#54_0" startPos="0.00" endPos="0.28" friendlyPos="true" lines="T2">
+        <access lane="--178900_0" pos="0.00" length="25.68" friendlyPos="1"/>
+        <access lane="-178900_0" pos="20.87" length="28.21" friendlyPos="1"/>
+        <access lane="-179247#1_0" pos="20.75" length="25.58" friendlyPos="1"/>
+        <access lane="-179247#2_0" pos="0.00" length="26.53" friendlyPos="1"/>
+        <access lane="-180330#4_0" pos="65.34" length="16.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-646915" name="Souk Ould Mina" lane="--178009#12_1" startPos="1.18" endPos="16.18" friendlyPos="true" lines="L50 L9E L143"/>
+    <busStop id="-647165" name="Etablissement Moussaoui" lane="--178768#0_1" startPos="2.64" endPos="17.64" friendlyPos="true" lines="L68"/>
+    <busStop id="-647176" name="Café Tafoukt" lane="-179071#5_1" startPos="12.33" endPos="27.33" friendlyPos="true"/>
+    <busStop id="-647232" name="Place Financière" lane="-181475#22_0" startPos="27.64" endPos="52.64" friendlyPos="true" lines="T2">
+        <access lane="-178057#5_0" pos="78.85" length="23.84" friendlyPos="1"/>
+        <access lane="-178970#20_0" pos="40.10" length="26.32" friendlyPos="1"/>
+        <access lane="-179493#2_0" pos="22.31" length="37.08" friendlyPos="1"/>
+        <access lane="-180694#4_0" pos="72.08" length="33.17" friendlyPos="1"/>
+        <access lane="-180879#3_0" pos="72.08" length="36.42" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-647234" name="Hay Hassani" lane="-181475#54_0" startPos="0.00" endPos="0.28" friendlyPos="true" lines="T2">
+        <access lane="--178900_0" pos="0.00" length="15.75" friendlyPos="1"/>
+        <access lane="-178225#0_0" pos="0.00" length="25.37" friendlyPos="1"/>
+        <access lane="-178900_0" pos="20.87" length="17.86" friendlyPos="1"/>
+        <access lane="-179247#1_0" pos="21.28" length="15.25" friendlyPos="1"/>
+        <access lane="-179247#2_0" pos="0.00" length="16.47" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-647417" name="Rond Point Chahdia" lane="-180283#2_1" startPos="2.84" endPos="17.84" friendlyPos="true"/>
+    <busStop id="-647417@-2076" name="Rond Point Chahdia" lane="--180283#2_1" startPos="5.04" endPos="20.04" friendlyPos="true" lines="L109"/>
+    <busStop id="-647519" name="Café Bouchiki" lane="--179071#10_1" startPos="0.00" endPos="4.09" friendlyPos="true" lines="L63 L19"/>
+    <busStop id="-647547" name="C.A. Tensift" lane="--178367#10_1" startPos="10.83" endPos="25.83" friendlyPos="true" lines="L68 L143"/>
+    <busStop id="-647547@-2076" name="C.A. Tensift" lane="-178367#10_1" startPos="73.77" endPos="88.77" friendlyPos="true"/>
+    <busStop id="-647875" name="Mosquée Afghanistan" lane="-177603#2_1" startPos="4.50" endPos="19.50" friendlyPos="true"/>
+    <busStop id="-647928" name="Angle Oum Rabia/Naciri" lane="-179517#1_1" startPos="157.74" endPos="172.74" friendlyPos="true"/>
+    <busStop id="-648583" name="Résidence Abwab Rabia" lane="-178285#10_1" startPos="2.17" endPos="17.17" friendlyPos="true"/>
+    <busStop id="-648811" name="Résidence Abwab Rabia" lane="-179073#2_1" startPos="63.16" endPos="78.16" friendlyPos="true"/>
+    <busStop id="-649480" name="Oued Beht" lane="-180605#8_0" startPos="14.06" endPos="29.06" friendlyPos="true">
+        <access lane="-177915#0_0" pos="21.47" length="11.92" friendlyPos="1"/>
+        <access lane="-178629#3_0" pos="82.27" length="32.85" friendlyPos="1"/>
+        <access lane="-178629#4_0" pos="0.00" length="46.74" friendlyPos="1"/>
+        <access lane="-180102#1_0" pos="0.00" length="57.78" friendlyPos="1"/>
+        <access lane="-180416_0" pos="0.00" length="51.31" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-649549" name="Sidi Abderrahmane" lane="-181475#46_0" startPos="15.39" endPos="40.39" friendlyPos="true" lines="T2">
+        <access lane="-180141#5_0" pos="25.35" length="21.00" friendlyPos="1"/>
+        <access lane="-181154#2_0" pos="27.64" length="20.60" friendlyPos="1"/>
+        <access lane="-181222#1_0" pos="0.20" length="46.61" friendlyPos="1"/>
+        <access lane="-181222#2_0" pos="0.20" length="45.72" friendlyPos="1"/>
+        <access lane="-181222#3_0" pos="0.00" length="45.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-650404" name="Cité de l&apos;Air" lane="-181475#36_0" startPos="28.14" endPos="53.14" friendlyPos="true" lines="T2">
+        <access lane="-177364#5_0" pos="3.00" length="61.49" friendlyPos="1"/>
+        <access lane="-180217#3_0" pos="3.13" length="59.52" friendlyPos="1"/>
+        <access lane="-180217#5_0" pos="0.00" length="59.96" friendlyPos="1"/>
+        <access lane="-180217#6_0" pos="0.00" length="60.61" friendlyPos="1"/>
+        <access lane="-181003#0_0" pos="0.00" length="59.19" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-650614" name="Oulfa" lane="--177880#0_1" startPos="0.00" endPos="2.72" friendlyPos="true" lines="L68"/>
+    <busStop id="-650614@-2076" name="Oulfa" lane="-179738#3_1" startPos="45.45" endPos="60.45" friendlyPos="true"/>
+    <busStop id="-650645" name="Pharmacie Tam" lane="-179466#12_1" startPos="15.21" endPos="30.21" friendlyPos="true"/>
+    <busStop id="630708" name="Anfa Clubs" lane="178073#43_0" startPos="51.73" endPos="76.73" friendlyPos="true">
+        <access lane="--180234#8_0" pos="63.73" length="17.56" friendlyPos="1"/>
+        <access lane="--181628#8_0" pos="64.18" length="115.14" friendlyPos="1"/>
+        <access lane="-177724#1_0" pos="200.27" length="102.45" friendlyPos="1"/>
+        <access lane="-177724#4_0" pos="0.00" length="101.72" friendlyPos="1"/>
+        <access lane="-180234#8_0" pos="77.12" length="4.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="631403" name="Sidi Abderrahmane" lane="178073#8_0" startPos="15.58" endPos="40.58" friendlyPos="true">
+        <access lane="-178087_0" pos="76.33" length="46.03" friendlyPos="1"/>
+        <access lane="-180141#5_0" pos="25.20" length="15.26" friendlyPos="1"/>
+        <access lane="-181154#2_0" pos="27.71" length="26.34" friendlyPos="1"/>
+        <access lane="-181222#1_0" pos="0.20" length="46.09" friendlyPos="1"/>
+        <access lane="-181222#2_0" pos="0.00" length="45.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="631631" name="Anfa Park" lane="178073#35_0" startPos="38.14" endPos="63.14" friendlyPos="true">
+        <access lane="-177731#0_0" pos="21.87" length="7.81" friendlyPos="1"/>
+        <access lane="-178171#0_0" pos="76.34" length="20.40" friendlyPos="1"/>
+        <access lane="-180067#16_0" pos="52.74" length="39.36" friendlyPos="1"/>
+        <access lane="-180583#4_0" pos="52.57" length="44.64" friendlyPos="1"/>
+        <access lane="-181571#2_0" pos="20.48" length="12.65" friendlyPos="1"/>
+    </busStop>
+    <busStop id="632608" name="Cité de l&apos;Air" lane="178073#18_0" startPos="26.34" endPos="51.34" friendlyPos="true">
+        <access lane="-177364#5_0" pos="3.00" length="62.58" friendlyPos="1"/>
+        <access lane="-177763#1_0" pos="0.20" length="62.16" friendlyPos="1"/>
+        <access lane="-180217#11_0" pos="0.00" length="63.42" friendlyPos="1"/>
+        <access lane="-180217#2_0" pos="121.91" length="61.66" friendlyPos="1"/>
+        <access lane="-180217#3_0" pos="2.56" length="60.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="635306" name="Place Financière" lane="178073#32_0" startPos="27.74" endPos="52.74" friendlyPos="true">
+        <access lane="-178057#5_0" pos="78.73" length="17.30" friendlyPos="1"/>
+        <access lane="-178970#20_0" pos="40.21" length="32.86" friendlyPos="1"/>
+        <access lane="-179493#2_0" pos="22.55" length="43.61" friendlyPos="1"/>
+        <access lane="-180694#4_0" pos="71.97" length="26.63" friendlyPos="1"/>
+        <access lane="-180879#3_0" pos="71.95" length="29.87" friendlyPos="1"/>
+    </busStop>
+    <busStop id="638673" name="Abdellah Ben Cherif" lane="178073#24_0" startPos="47.21" endPos="72.21" friendlyPos="true">
+        <access lane="--180038#0_0" pos="101.16" length="13.22" friendlyPos="1"/>
+        <access lane="-178534#7_0" pos="15.04" length="89.49" friendlyPos="1"/>
+        <access lane="-178534#8_0" pos="2.34" length="88.96" friendlyPos="1"/>
+        <access lane="-180038#0_0" pos="59.70" length="0.62" friendlyPos="1"/>
+        <access lane="-180388#0_0" pos="0.00" length="105.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="639358" name="Beauséjour" lane="178073#53_0" startPos="29.75" endPos="54.75" friendlyPos="true">
+        <access lane="--177823_0" pos="37.17" length="20.64" friendlyPos="1"/>
+        <access lane="-177823_0" pos="0.00" length="26.36" friendlyPos="1"/>
+        <access lane="-177940#10_0" pos="0.83" length="15.13" friendlyPos="1"/>
+        <access lane="-177940#9_0" pos="63.13" length="26.05" friendlyPos="1"/>
+        <access lane="-177984#1_0" pos="42.25" length="26.19" friendlyPos="1"/>
+    </busStop>
+    <busStop id="641485" name="Facultés" lane="181489#2_0" startPos="0.00" endPos="25.00" friendlyPos="true">
+        <access lane="--179123#1_0" pos="0.00" length="54.42" friendlyPos="1"/>
+        <access lane="--180156_0" pos="62.60" length="56.53" friendlyPos="1"/>
+        <access lane="-178315#1_0" pos="85.22" length="16.10" friendlyPos="1"/>
+        <access lane="-179349#4_0" pos="131.01" length="14.65" friendlyPos="1"/>
+        <access lane="-180156_0" pos="22.31" length="51.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="646730" name="Hay Hassani" lane="178073#0_0" startPos="0.00" endPos="0.73" friendlyPos="true">
+        <access lane="--178900_0" pos="0.00" length="25.68" friendlyPos="1"/>
+        <access lane="-178900_0" pos="20.87" length="28.21" friendlyPos="1"/>
+        <access lane="-179247#1_0" pos="20.75" length="25.58" friendlyPos="1"/>
+        <access lane="-179247#2_0" pos="0.00" length="26.53" friendlyPos="1"/>
+        <access lane="-180330#4_0" pos="65.34" length="16.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="647234" name="Hay Hassani" lane="178073#0_0" startPos="0.00" endPos="0.73" friendlyPos="true">
+        <access lane="--178900_0" pos="0.00" length="15.75" friendlyPos="1"/>
+        <access lane="-178225#0_0" pos="0.00" length="25.37" friendlyPos="1"/>
+        <access lane="-178900_0" pos="20.87" length="17.86" friendlyPos="1"/>
+        <access lane="-179247#1_0" pos="21.28" length="15.25" friendlyPos="1"/>
+        <access lane="-179247#2_0" pos="0.00" length="16.47" friendlyPos="1"/>
+    </busStop>
+</additional>

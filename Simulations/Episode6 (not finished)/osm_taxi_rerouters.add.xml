@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-30 00:03:57.664815 by scenarioFromOSM.py UNKNOWN
+<configuration>
+    <parking-areas value="osm_taxi_stands.add.xml"/>
+    <sumo-net value="osm.net.xml"/>
+    <max-distance-alternatives value="5000.0"/>
+    <min-capacity-visibility-true value="50"/>
+    <max-distance-visibility-true value="1000.0"/>
+    <processes value="5"/>
+    <output value="osm_taxi_rerouters.add.xml"/>
+    <tqdm value="True"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <rerouter id="-1300766" edges="-361551#0">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1300766" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1317151" visible="true"/> <!-- dist: 159.4 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 3044.8 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 3428.8 -->
+            <parkingAreaReroute id="-1306782" visible="false"/> <!-- dist: 3959.5 -->
+            <parkingAreaReroute id="-1315198" visible="false"/> <!-- dist: 4115.0 -->
+            <parkingAreaReroute id="-1313384" visible="false"/> <!-- dist: 4233.4 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 4479.1 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1306782" edges="-363131#0">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1306782" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1313384" visible="true"/> <!-- dist: 591.7 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 1603.7 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 1975.0 -->
+            <parkingAreaReroute id="-1315198" visible="false"/> <!-- dist: 2170.1 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 2867.8 -->
+            <parkingAreaReroute id="-1300766" visible="false"/> <!-- dist: 4141.4 -->
+            <parkingAreaReroute id="-1317151" visible="false"/> <!-- dist: 4310.8 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1312948" edges="-364576#1">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1312948" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1315198" visible="true"/> <!-- dist: 856.2 -->
+            <parkingAreaReroute id="-1306782" visible="false"/> <!-- dist: 1823.2 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 1839.1 -->
+            <parkingAreaReroute id="-1313384" visible="false"/> <!-- dist: 2097.1 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 3051.8 -->
+            <parkingAreaReroute id="-1300766" visible="false"/> <!-- dist: 3716.7 -->
+            <parkingAreaReroute id="-1317151" visible="false"/> <!-- dist: 3886.1 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1313384" edges="--361076#3">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1313384" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1306782" visible="true"/> <!-- dist: 751.9 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 1694.1 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 2289.9 -->
+            <parkingAreaReroute id="-1315198" visible="false"/> <!-- dist: 2485.0 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 3182.7 -->
+            <parkingAreaReroute id="-1300766" visible="false"/> <!-- dist: 4461.1 -->
+            <parkingAreaReroute id="-1317151" visible="false"/> <!-- dist: 4630.5 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1314706" edges="--361499#1">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1314706" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 1208.7 -->
+            <parkingAreaReroute id="-1315198" visible="false"/> <!-- dist: 1447.5 -->
+            <parkingAreaReroute id="-1300766" visible="false"/> <!-- dist: 2780.5 -->
+            <parkingAreaReroute id="-1306782" visible="false"/> <!-- dist: 2930.8 -->
+            <parkingAreaReroute id="-1317151" visible="false"/> <!-- dist: 2949.9 -->
+            <parkingAreaReroute id="-1313384" visible="false"/> <!-- dist: 3204.6 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 4106.6 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1315198" edges="-363634">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1315198" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 1009.9 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 1297.3 -->
+            <parkingAreaReroute id="-1306782" visible="false"/> <!-- dist: 2378.9 -->
+            <parkingAreaReroute id="-1313384" visible="false"/> <!-- dist: 2652.7 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 3607.5 -->
+            <parkingAreaReroute id="-1300766" visible="false"/> <!-- dist: 4075.0 -->
+            <parkingAreaReroute id="-1317151" visible="false"/> <!-- dist: 4244.4 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-1317151" edges="-360655#1">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-1317151" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-1300766" visible="true"/> <!-- dist: 704.6 -->
+            <parkingAreaReroute id="-1314706" visible="false"/> <!-- dist: 2875.3 -->
+            <parkingAreaReroute id="-1312948" visible="false"/> <!-- dist: 3259.3 -->
+            <parkingAreaReroute id="-1306782" visible="false"/> <!-- dist: 3790.1 -->
+            <parkingAreaReroute id="-1315198" visible="false"/> <!-- dist: 3945.5 -->
+            <parkingAreaReroute id="-1313384" visible="false"/> <!-- dist: 4063.9 -->
+            <parkingAreaReroute id="-1306777" visible="false"/> <!-- dist: 4309.6 -->
+        </interval>
+    </rerouter>
+</additional>

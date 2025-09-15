@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-20 02:29:09.394347 by scenarioFromOSM.py UNKNOWN
+<configuration>
+    <parking-areas value="osm_complete_parking_areas.add.xml"/>
+    <sumo-net value="osm.net.xml"/>
+    <max-distance-alternatives value="1000.0"/>
+    <min-capacity-visibility-true value="50"/>
+    <max-distance-visibility-true value="1000.0"/>
+    <output value="osm_parking_rerouters.add.xml"/>
+    <tqdm value="True"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <rerouter id="-227364" edges="--63381#3">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-227364" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-233235" visible="true"/> <!-- dist: 334.2 -->
+            <parkingAreaReroute id="-236886" visible="true"/> <!-- dist: 502.7 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-233235" edges="-62188#1">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-233235" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-236886" visible="true"/> <!-- dist: 514.8 -->
+            <parkingAreaReroute id="-227364" visible="true"/> <!-- dist: 534.2 -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="-236886" edges="--60762#0">
+        <interval begin="0.0" end="86400.0">
+            <!-- in order of distance --> 
+            <parkingAreaReroute id="-236886" visible="true"/> <!-- dist: 0.0 -->
+            <parkingAreaReroute id="-233235" visible="true"/> <!-- dist: 463.0 -->
+        </interval>
+    </rerouter>
+</additional>

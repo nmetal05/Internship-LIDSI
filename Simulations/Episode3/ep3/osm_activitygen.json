@@ -1,0 +1,975 @@
+{
+  "seed": 44,
+  "maxNumTry": 10,
+  "outputPrefix": "osm_activitygen",
+  "mergeRoutesFiles": true,
+  "sumocfg": "duarouter.sumocfg",
+  "SUMOnetFile": "osm.net.xml",
+  "SUMOadditionals": {
+    "vTypes": "basic.vType.xml",
+    "parkings": "osm_complete_parking_areas.add.xml"
+  },
+  "intermodalOptions": {
+    "parkingAreaBlacklist": [],
+    "vehicleAllowedParking": [
+      "passenger",
+      "motorcycle",
+      "evehicle"
+    ],
+    "taxiFleetSize": 10,
+    "taxiFleetInitialTAZs": [],
+    "taxiStands": "osm_taxi_stands.add.xml",
+    "taxiStandsBlacklist": [],
+    "modeSelection": "PROBABILITY"
+  },
+  "population": {
+    "entities": 300,
+    "tazDefinition": "osm_taz.xml",
+    "tazWeights": "osm_taz_weight.csv",
+    "buildingsWeight": "buildings/",
+    "PoIsDefinition": "TBD"
+  },
+  "taz": {
+    "-1897": [
+      "-1897"
+    ],
+    "-1932": [
+      "-1932"
+    ],
+    "-1903": [
+      "-1903"
+    ],
+    "-1891": [
+      "-1891"
+    ],
+    "-1949": [
+      "-1949"
+    ],
+    "-1919": [
+      "-1919"
+    ]
+  },
+  "activities": {
+    "Home": {
+      "start": {},
+      "duration": {
+        "m": 1800,
+        "s": 900
+      }
+    },
+    "P-Groceries": {
+      "start": {
+        "m": 82800,
+        "s": 3600
+      },
+      "duration": {
+        "m": 1800,
+        "s": 600
+      }
+    }
+  },
+  "slices": {
+    "-1897_-1897": {
+      "perc": 0.0154,
+      "loc_origin": "-1897",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1897_-1932": {
+      "perc": 0.0207,
+      "loc_origin": "-1897",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1897_-1903": {
+      "perc": 0.0168,
+      "loc_origin": "-1897",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1897_-1891": {
+      "perc": 0.0044,
+      "loc_origin": "-1897",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1897_-1949": {
+      "perc": 0.003,
+      "loc_origin": "-1897",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1897_-1919": {
+      "perc": 0.0212,
+      "loc_origin": "-1897",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1897": {
+      "perc": 0.0177,
+      "loc_origin": "-1932",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1932": {
+      "perc": 0.1054,
+      "loc_origin": "-1932",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1903": {
+      "perc": 0.02,
+      "loc_origin": "-1932",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1891": {
+      "perc": 0.0186,
+      "loc_origin": "-1932",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1949": {
+      "perc": 0.0064,
+      "loc_origin": "-1932",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1932_-1919": {
+      "perc": 0.0197,
+      "loc_origin": "-1932",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1897": {
+      "perc": 0.0216,
+      "loc_origin": "-1903",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1932": {
+      "perc": 0.0267,
+      "loc_origin": "-1903",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1903": {
+      "perc": 0.0934,
+      "loc_origin": "-1903",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1891": {
+      "perc": 0.0146,
+      "loc_origin": "-1903",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1949": {
+      "perc": 0.0076,
+      "loc_origin": "-1903",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1903_-1919": {
+      "perc": 0.0317,
+      "loc_origin": "-1903",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1897": {
+      "perc": 0.0039,
+      "loc_origin": "-1891",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1932": {
+      "perc": 0.0142,
+      "loc_origin": "-1891",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1903": {
+      "perc": 0.0103,
+      "loc_origin": "-1891",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1891": {
+      "perc": 0.0239,
+      "loc_origin": "-1891",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1949": {
+      "perc": 0.009,
+      "loc_origin": "-1891",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1891_-1919": {
+      "perc": 0.0142,
+      "loc_origin": "-1891",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1897": {
+      "perc": 0.0023,
+      "loc_origin": "-1949",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1932": {
+      "perc": 0.0061,
+      "loc_origin": "-1949",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1903": {
+      "perc": 0.0066,
+      "loc_origin": "-1949",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1891": {
+      "perc": 0.012,
+      "loc_origin": "-1949",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1949": {
+      "perc": 0.0244,
+      "loc_origin": "-1949",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1949_-1919": {
+      "perc": 0.0123,
+      "loc_origin": "-1949",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1897": {
+      "perc": 0.0102,
+      "loc_origin": "-1919",
+      "loc_primary": "-1897",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1932": {
+      "perc": 0.0209,
+      "loc_origin": "-1919",
+      "loc_primary": "-1932",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1903": {
+      "perc": 0.0309,
+      "loc_origin": "-1919",
+      "loc_primary": "-1903",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1891": {
+      "perc": 0.0239,
+      "loc_origin": "-1919",
+      "loc_primary": "-1891",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1949": {
+      "perc": 0.0382,
+      "loc_origin": "-1919",
+      "loc_primary": "-1949",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    },
+    "-1919_-1919": {
+      "perc": 0.272,
+      "loc_origin": "-1919",
+      "loc_primary": "-1919",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-Groceries",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.6
+            ],
+            [
+              "passenger",
+              0.4
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "minEdgeAllowed": 30.0,
+  "stopBufferDistance": 20.0
+}

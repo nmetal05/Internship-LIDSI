@@ -1,0 +1,1118 @@
+{
+  "seed": 45,
+  "maxNumTry": 10,
+  "outputPrefix": "osm_activitygen",
+  "mergeRoutesFiles": true,
+  "sumocfg": "duarouter.sumocfg",
+  "SUMOnetFile": "osm.net.xml",
+  "SUMOadditionals": {
+    "vTypes": "basic.vType.xml",
+    "parkings": "osm_complete_parking_areas.add.xml"
+  },
+  "intermodalOptions": {
+    "parkingAreaBlacklist": [],
+    "vehicleAllowedParking": [
+      "passenger",
+      "motorcycle",
+      "evehicle"
+    ],
+    "taxiFleetSize": 50,
+    "taxiFleetInitialTAZs": [],
+    "taxiStands": "osm_taxi_stands.add.xml",
+    "taxiStandsBlacklist": [],
+    "modeSelection": "PROBABILITY"
+  },
+  "population": {
+    "entities": 300,
+    "tazDefinition": "osm_taz.xml",
+    "tazWeights": "osm_taz_weight.csv",
+    "buildingsWeight": "buildings/",
+    "PoIsDefinition": "TBD"
+  },
+  "taz": {
+    "-2081": [
+      "-2081"
+    ],
+    "-2075": [
+      "-2075"
+    ],
+    "-2051": [
+      "-2051"
+    ],
+    "-2030": [
+      "-2030"
+    ],
+    "-2089": [
+      "-2089"
+    ],
+    "-2036": [
+      "-2036"
+    ]
+  },
+  "activities": {
+    "Home": {
+      "duration": {
+        "m": 600,
+        "s": 300
+      }
+    },
+    "P-NSH": {
+      "start": {
+        "m": 600,
+        "s": 300
+      },
+      "duration": {
+        "m": 7200,
+        "s": 900
+      }
+    }
+  },
+  "slices": {
+    "-2081_-2081": {
+      "perc": 0.0139,
+      "loc_origin": "-2081",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2081_-2075": {
+      "perc": 0.0263,
+      "loc_origin": "-2081",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2081_-2051": {
+      "perc": 0.0225,
+      "loc_origin": "-2081",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2081_-2030": {
+      "perc": 0.0095,
+      "loc_origin": "-2081",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2081_-2089": {
+      "perc": 0.0054,
+      "loc_origin": "-2081",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2081_-2036": {
+      "perc": 0.0345,
+      "loc_origin": "-2081",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2081": {
+      "perc": 0.0175,
+      "loc_origin": "-2075",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2075": {
+      "perc": 0.1123,
+      "loc_origin": "-2075",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2051": {
+      "perc": 0.0267,
+      "loc_origin": "-2075",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2030": {
+      "perc": 0.0182,
+      "loc_origin": "-2075",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2089": {
+      "perc": 0.0072,
+      "loc_origin": "-2075",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2075_-2036": {
+      "perc": 0.0174,
+      "loc_origin": "-2075",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2081": {
+      "perc": 0.0195,
+      "loc_origin": "-2051",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2075": {
+      "perc": 0.0269,
+      "loc_origin": "-2051",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2051": {
+      "perc": 0.0768,
+      "loc_origin": "-2051",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2030": {
+      "perc": 0.0127,
+      "loc_origin": "-2051",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2089": {
+      "perc": 0.0071,
+      "loc_origin": "-2051",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2051_-2036": {
+      "perc": 0.0234,
+      "loc_origin": "-2051",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2081": {
+      "perc": 0.0031,
+      "loc_origin": "-2030",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2075": {
+      "perc": 0.0089,
+      "loc_origin": "-2030",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2051": {
+      "perc": 0.01,
+      "loc_origin": "-2030",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2030": {
+      "perc": 0.0158,
+      "loc_origin": "-2030",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2089": {
+      "perc": 0.0071,
+      "loc_origin": "-2030",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2030_-2036": {
+      "perc": 0.0111,
+      "loc_origin": "-2030",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2081": {
+      "perc": 0.0023,
+      "loc_origin": "-2089",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2075": {
+      "perc": 0.0046,
+      "loc_origin": "-2089",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2051": {
+      "perc": 0.0053,
+      "loc_origin": "-2089",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2030": {
+      "perc": 0.008,
+      "loc_origin": "-2089",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2089": {
+      "perc": 0.016,
+      "loc_origin": "-2089",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2089_-2036": {
+      "perc": 0.008,
+      "loc_origin": "-2089",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2081": {
+      "perc": 0.0126,
+      "loc_origin": "-2036",
+      "loc_primary": "-2081",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2075": {
+      "perc": 0.018,
+      "loc_origin": "-2036",
+      "loc_primary": "-2075",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2051": {
+      "perc": 0.0253,
+      "loc_origin": "-2036",
+      "loc_primary": "-2051",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2030": {
+      "perc": 0.0196,
+      "loc_origin": "-2036",
+      "loc_primary": "-2030",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2089": {
+      "perc": 0.0382,
+      "loc_origin": "-2036",
+      "loc_primary": "-2089",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    },
+    "-2036_-2036": {
+      "perc": 0.3084,
+      "loc_origin": "-2036",
+      "loc_primary": "-2036",
+      "activityChains": [
+        [
+          1.0,
+          [
+            "Home",
+            "P-NSH",
+            "Home"
+          ],
+          [
+            [
+              "motorcycle",
+              0.5
+            ],
+            [
+              "passenger",
+              0.2
+            ],
+            [
+              "on-demand",
+              0.3
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "minEdgeAllowed": 30.0,
+  "stopBufferDistance": 20.0
+}

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-30 00:02:51 by Eclipse SUMO netconvert Version c915cd253
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/home/dahou/sumo/data/typemap/osmNetconvert.typ.xml,/home/dahou/sumo/data/typemap/osmNetconvertBicycle.typ.xml,/home/dahou/sumo/data/typemap/osmNetconvertPedestrians.typ.xml"/>
+        <osm-files value="H2ST9_cp.osm"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+        <parking-output value="osm_parking.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <edge_removal>
+        <keep-edges.components value="1"/>
+        <remove-edges.isolated value="true"/>
+    </edge_removal>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="false"/>
+        <no-turnarounds.tls value="false"/>
+        <no-turnarounds.geometry value="true"/>
+        <no-turnarounds.except-deadend value="true"/>
+        <no-turnarounds.except-turnlane value="false"/>
+        <no-turnarounds.fringe value="true"/>
+        <junctions.join value="true"/>
+        <junctions.join-dist value="10"/>
+        <junctions.join-same value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.internal-link-detail value="5"/>
+        <check-lane-foes.roundabout value="true"/>
+    </junctions>
+
+    <pedestrian>
+        <sidewalks.guess value="false"/>
+        <sidewalks.guess.max-speed value="13.89"/>
+        <sidewalks.guess.min-speed value="5.8"/>
+        <sidewalks.guess.from-permissions value="false"/>
+        <crossings.guess value="true"/>
+        <crossings.guess.speed-threshold value="13.89"/>
+        <walkingareas value="false"/>
+        <walkingareas.join-dist value="15"/>
+    </pedestrian>
+
+    <bicycle>
+        <bikelanes.guess value="false"/>
+        <bikelanes.guess.max-speed value="22.22"/>
+        <bikelanes.guess.min-speed value="5.8"/>
+        <bikelanes.guess.from-permissions value="false"/>
+    </bicycle>
+
+    <railway>
+        <railway.signals.discard value="false"/>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.connect-straight value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+        <railway.topology.all-bidi value="false"/>
+        <railway.topology.direction-priority value="false"/>
+        <railway.access-distance value="150"/>
+        <railway.max-accesses value="5"/>
+        <railway.access-factor value="1.5"/>
+    </railway>
+
+    <formats>
+        <osm.skip-duplicates-check value="false"/>
+        <osm.elevation value="true"/>
+        <osm.stop-output.length value="25"/>
+        <osm.stop-output.length.bus value="15"/>
+        <osm.stop-output.length.tram value="25"/>
+        <osm.stop-output.length.train value="200"/>
+        <osm.all-attributes value="false"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="-4054" name="L50 Errahma - C. Sidi Belyout" line="L50" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364744#0 -364744#1 -364744#2 -364744#3 -361337 -362938#0 -362938#1 -362938#2 -361645#0 -361645#1 -361645#2 -361645#3 -361645#4 -361157 -364302#0 -364302#1 -364302#2 -361298#0 -361298#1 -361298#2 -361012#0 -361012#1 -361591#4 --363440#14 --363440#13 --363440#12 --363440#11 --363440#10 --363440#9 --363440#8 --363440#7 --363440#5 --363440#4 --363440#3 --363440#2 --363440#1 --363440#0 --363548#19 --363548#18 --363548#17 --363548#15 --363548#14 --363548#13 --363548#12 --363548#11 --363548#10 --363548#8 --363548#7 --363548#6 --363548#5 --363548#4 --363548#2 --363548#1 --363548#0 -364247#0 -364247#1 -362699#0 -362699#1 -362699#2 -364056#0 -364056#1"/>
+        <busStop id="-1303456" name="Terminus Mosquée Ferrara"/>
+        <busStop id="-1297786" name="École Al Ajial"/>
+        <busStop id="-1299194" name="Lycée Fechtali"/>
+        <busStop id="-1310571" name="Café Kairaouan"/>
+        <busStop id="-1301630" name="Marjane Hay Hassani"/>
+        <busStop id="-1306905" name="Souk Ould Mina"/>
+        <busStop id="-1301325" name="Dar Lhamra"/>
+    </ptLine>
+    <ptLine id="-4056" name="Ligne 72: Salmia - Sidi Al Khadir" line="72" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364054#0 -364054#1 -362482#0 -362482#1 -362482#2 -361693#0 -361693#1 -361693#2 -361693#3 -361693#4 -361693#5 -362048 -361076#1 -361076#2 -361076#3 -361076#4 -361076#5 -361076#6 -361076#7 -361076#8 -361076#9 -361076#10 -361076#11 -361076#12 -361076#13 -362840#0 -362840#1 -362840#2 -362840#3 -362840#4 -362840#5"/>
+        <busStop id="-1309946" name="Stade Hay Hassani"/>
+        <busStop id="-1310234" name="Mosquée Afghanistan"/>
+        <busStop id="-1300217" name="Terminus Sidi Al-Khadir"/>
+    </ptLine>
+    <ptLine id="-4059" name="L50 C. Sidi Belyout-Errahma" line="L50" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364056#1 -363951#0 -363951#1 -363127#0 -363127#1 -363127#2 -360860#0 -360860#1 -363548#0 -363548#1 -363548#2 -363548#4 -363548#5 -363548#6 -363548#7 -363548#8 -363548#10 -363548#11 -363548#12 -363548#13 -363548#14 -363548#15 -363548#17 -363548#18 -363548#19 -363440#0 -363440#1 -363440#2 -363440#3 -363440#4 -363440#5 -363440#7 -363440#8 -363440#9 -363440#10 -363440#11 -363440#12 -363440#13 -363440#14 -361967#0 -361015#0 -361015#1 -361015#2 -361015#3 -361015#4 -362547#0 -362547#1 -362305 -364596 -363634"/>
+        <busStop id="-1300954" name="Dar Lhamra"/>
+        <busStop id="-1309908" name="Souk Ould Mina"/>
+        <busStop id="-1297996" name="Cité Police Ibn Sina"/>
+        <busStop id="-1307541" name="Lycée Fechtali"/>
+        <busStop id="-1300865" name="École Al Ajial"/>
+        <busStop id="-1312177" name="Terminus Mosquée Ferrara"/>
+    </ptLine>
+    <ptLine id="-4061" name="L51 Errahma-G. R. Ouled Ziane" line="L51" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364681#1 -363374 -360655#0 -360655#1 -362355#0 -362355#1 -362355#2 -362751 -361394#0 -361394#1 -361394#2 -361394#3 -361394#4 -361394#5 -361394#6 -361394#7 -361394#11 -363949#0 -363949#1 -363949#2 -361823#0 -361823#1"/>
+        <busStop id="-1308920" name="Stade Père-Jégo"/>
+    </ptLine>
+    <ptLine id="-4063" name="T1: Lissasfa &gt; Sidi Moumen" line="T1" type="tram" vClass="tram" color="243,130,48" completeness="1.00">
+        <route edges="-362613#0 -362613#2 -362613#3 -362613#4 -362613#6 -362613#7 -362613#8 -362613#9 -362613#10 -362613#11 -362613#12"/>
+        <busStop id="-1312169" name="Laymoune"/>
+        <busStop id="-1302976" name="Facultés Terminus"/>
+    </ptLine>
+    <ptLine id="-4064" name="L13 Terminus Kasbat Al amine-Sidi Belyout (Bd d&apos;Anfa)" line="L13" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364769#0 -364769#1 -364792#0 -364792#1 -364792#3 -361090#0 -361090#1 -361090#3 -361363#0 -361363#1 -363696#0 -363696#1 -363696#2 -360818#0 -360818#1 -362292#0 -362777#1 -362777#2 -362777#3 -363304#1 -363304#2 -362728#0 -362728#1 -362650#0 -362650#1 -362650#2 -362650#3 -362650#4 -360657#0 -360657#1 -360657#2 -363763#0 -363763#1 -362100#0 -362100#1 -362100#2 -362100#3 -362100#5 -362100#6 -362100#7 -362046#0 -362046#1 -362046#2 -362046#3 -364448#1 -362326#1 -362326#2 -362326#4 -361935#1 -361935#2 -361935#3 -361935#6 -361935#7 -361935#9 -361935#10 -361935#11 -362781#0 -363257#1 -364678#0 -364678#2 -364056#0 -364056#1"/>
+        <busStop id="-1297690" name="Terminus Hay Salam"/>
+        <busStop id="-1308918" name="Hay Salam"/>
+        <busStop id="-1316081" name="Tribunal"/>
+        <busStop id="-1298113" name="Résidences Firdaouss"/>
+        <busStop id="-1299936" name="Carr. Schneider"/>
+        <busStop id="-1304523" name="Polyclinique CNSS Rabia"/>
+    </ptLine>
+    <ptLine id="-4066" name="L306 Lakhiaita-Mâarif" line="L306" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364681#1 -363374 -360655#0 -360655#1 -362355#0 -362355#1 -362355#2 -362751 -361394#0 -361394#1 -361394#2 -361394#3 -361394#4 -361394#5 -361394#6 -361394#7 -361394#11 -363949#0 -363949#1 -363949#2 -361823#0 -361823#1"/>
+        <busStop id="-1308920" name="Stade Père-Jégo"/>
+    </ptLine>
+    <ptLine id="-4070" name="L143 Ferara - Tacharouk" line="L143" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364596 -362970#3 -362970#4 -362970#5 -362970#6 -362970#7 -362970#8 --362941#10 --362941#8 --362941#7 --362941#6 --362941#5 --362941#4 --362941#2 --362941#1 --362941#0 --364379 --360553#3 --360553#2 --360553#1 --360553#0 --364933#6 --364933#5 --364933#4 --364933#3 --364933#2 --364933#1 --364933#0 -361298#0 -361298#1 -361298#2 -361012#0 -361012#1 -361591#4 --363440#14 --363440#13 --363440#12 --363440#11 --363440#10 --363440#9 --363440#8 --363440#7 --363440#5 --363440#4 --363440#3 --363440#2 --363440#1 --363440#0 --363548#19 --363548#18 --363548#17 --363548#15 --363548#14 --363548#13 --363548#12 --363548#11 --363548#10 --363548#8 --363548#7 --363548#6 --363548#5 --363548#4 --363548#2 --363548#1 --363548#0 -364247#0 -364247#1 -362699#0 -362699#1 -362699#2 -364056#0 -364056#1"/>
+        <busStop id="-1312177" name="Terminus Mosquée Ferrara"/>
+        <busStop id="-1313606" name="C.A. Tensift"/>
+        <busStop id="-1307804" name="École Elbennay"/>
+        <busStop id="-1299194" name="Lycée Fechtali"/>
+        <busStop id="-1301630" name="Marjane Hay Hassani"/>
+        <busStop id="-1306905" name="Souk Ould Mina"/>
+        <busStop id="-1301325" name="Dar Lhamra"/>
+    </ptLine>
+    <ptLine id="-4076" name="L109 Gare Routière Ouled Ziane-Hay Zoubir" line="L109" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-361746#0 -361746#1 -361746#2 -361746#3 -361243 -363745#3 -363745#4 -363745#5 -363745#6 -363745#7 -363745#10 -363745#11 -363745#12 -360645#0 -360645#1 -362465#0 -362465#1 -362465#2 -362465#3 -362465#4 -362465#5 -362465#6 -362465#7 -362465#8 -362465#9 -362465#10 -362465#11 -361015#0 -361015#1 -361015#2 -361015#3 -361015#4 -362547#0 -362547#1 -364131#1 -364131#2 -362941#0 -362941#1 -362941#2 -362941#4 -362941#5 -362941#6 -362941#7 -362941#8 -362941#10 -361847#0 -361847#1 -361847#2 -361847#3 -364544#1 -364544#2 -362218#0 -364567#0 -364567#1 -364567#2 -364567#3 -361441#0 -361441#1 -361441#2 -361441#3 -361441#4 -361449#0 -361449#1 -361449#2 -363195 --361626#2 --361626#1 --361499#1 --361499#0 --360913#2 --360913#1 --360913#0 --362063#2 --362063#1 --362063#0 --362820 --361260#3 --361260#2 --361260#1 --364731#2 --364731#1 --364731#0"/>
+        <busStop id="-1301380" name="L&apos;Academie"/>
+        <busStop id="-1305082" name="Polyclinique CNSS Rabia"/>
+        <busStop id="-1307043" name="Carr. Schneider"/>
+        <busStop id="-1318905" name="Résidence Abwab Rabia"/>
+        <busStop id="-1307541" name="Lycée Fechtali"/>
+        <busStop id="-1300865" name="École Al Ajial"/>
+        <busStop id="-1305957" name="École Elbennay"/>
+        <busStop id="-1315940" name="C.A. Tensift"/>
+        <busStop id="-1308978" name="Oulfa"/>
+        <busStop id="-1316105" name="Rond Point Chahdia"/>
+        <busStop id="-1307069" name="Mosquée El Fath"/>
+        <busStop id="-1319104" name="Café Atlas"/>
+    </ptLine>
+    <ptLine id="-4077" name="L306 Mâarif-Lakhiaita" line="L306" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364775#1 -364457#0 -364457#1 -364457#2 -364457#3 -362501#0 -362501#4 -362501#5 -362501#6 -362501#7 -363815#0 -363815#1 -364776#0 -364776#1 -361734#0 -361734#1 -362448#1 -362448#3 -362448#4 -362448#5 -362448#6 -362645 -364272#0 -364272#1 -364272#2 -364272#3 -364272#4 -364272#5 -364272#6 -363582#0 -363582#1 -363582#2 -363582#3 -363582#4 -361551#0 -361551#1 -364676 -364897#0 -364897#1 -364897#2"/>
+        <busStop id="-1298379" name="Facultés - Route d&apos;El Jadida"/>
+    </ptLine>
+    <ptLine id="-4081" name="BW2 Oulmès-Ouled Azzouz" line="BW2" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-362798#0 -362798#1 -362798#2 -362798#3 -364520#0 -364520#1 -364520#5 -364520#6 -364520#7 -364520#8 -364520#9 -364520#11 -364520#12 -364520#13 -364520#14 -364520#15 -364520#16 -364520#17 -364520#20 -364520#21 -364520#23 -364520#25 -364520#26 -364520#28 -364520#29 -364520#31"/>
+        <busStop id="-1318070" name="Les Musees"/>
+        <busStop id="-1297565" name="Oued Oum Rabia"/>
+        <busStop id="-1303056" name="Oued Laou"/>
+        <busStop id="-1316779" name="Oued Beht"/>
+        <busStop id="-1300165" name="Moulouya"/>
+    </ptLine>
+    <ptLine id="-4084" name="Tram 2: Sidi Bernoussi &gt; Aïn Diab" line="T2" type="tram" vClass="tram" color="255,219,47" completeness="1.00">
+        <route edges="-362320#1 -362320#2 -362320#3 -362320#4 -362320#8 -362320#9 -362320#10 -362320#11 -362320#12 -362320#13 -362320#14 -362320#15 -362320#17 -362320#19 -362320#20 -362320#21 -362320#22 -362320#23 -362320#24 -362320#25 -362320#30 -362320#31 -362320#33 -362320#36 -362320#39 -362320#41 -362320#42 -362320#43 -362320#44 -362320#45 -362320#46 -362320#47 -362320#48 -362320#49 -362320#51 -362320#52 -362320#53 -362320#54"/>
+        <busStop id="-1308448" name="Beauséjour"/>
+        <busStop id="-1310492" name="Anfa Clubs"/>
+        <busStop id="-1314270" name="Anfa Park"/>
+        <busStop id="-1313253" name="Place Financière"/>
+        <busStop id="-1300538" name="Abdellah Ben Cherif"/>
+        <busStop id="-1314532" name="Cité de l&apos;Air"/>
+        <busStop id="-1317699" name="Sidi Abderrahmane"/>
+        <busStop id="-1316156" name="Hay Hassani"/>
+    </ptLine>
+    <ptLine id="-4086" name="L68 Ouled Mellouk-Hay Salam" line="L68" type="bus" vClass="bus" completeness="1.00">
+        <route edges="--363342 --363878#3 --363878#1 --364084#3 --364084#2 --364084#1 --364084#0 -362820 -362063#0 -362063#1 -362063#2 -360913#0 -360913#1 -360913#2 -361499#0 -361499#1 -361626#1 -361626#2 --364567#3 --364567#2 --364567#1 --364567#0 --362218#0 --362941#10 --362941#8 --362941#7 --362941#6 --362941#5 --362941#4 --362941#2 --362941#1 --362941#0"/>
+        <busStop id="-1305082" name="Polyclinique CNSS Rabia"/>
+        <busStop id="-1307043" name="Carr. Schneider"/>
+        <busStop id="-1318905" name="Résidence Abwab Rabia"/>
+        <busStop id="-1307541" name="Lycée Fechtali"/>
+        <busStop id="-1300865" name="École Al Ajial"/>
+        <busStop id="-1305957@-4086" name="École Elbennay"/>
+        <busStop id="-1315940@-4086" name="C.A. Tensift"/>
+        <busStop id="-1308978@-4086" name="Oulfa"/>
+        <busStop id="-1316105@-4086" name="Rond Point Chahdia"/>
+        <busStop id="-1307069@-4086" name="Mosquée El Fath"/>
+        <busStop id="-1308890" name="Etablissement Moussaoui"/>
+        <busStop id="-1304466" name="Groupe Scolaire Al Amjad"/>
+        <busStop id="-1297690" name="Terminus Hay Salam"/>
+    </ptLine>
+    <ptLine id="-4088" name="L143 Tacharouk-Ferara" line="L143" type="bus" vClass="bus" completeness="1.00">
+        <route edges="--362941#10 --362941#8 --362941#7 --362941#6 --362941#5 --362941#4 --362941#2 --362941#1 --362941#0 --364379 --360553#3 --360553#2 --360553#1 --360553#0 --364933#6 --364933#5 --364933#4 --364933#3 --364933#2 --364933#1 --364933#0 --363440#14 --363440#13 --363440#12 --363440#11 --363440#10 --363440#9 --363440#8 --363440#7 --363440#5 --363440#4 --363440#3 --363440#2 --363440#1 --363440#0 --363548#19 --363548#18 --363548#17 --363548#15 --363548#14 --363548#13 --363548#12 --363548#11 --363548#10 --363548#8 --363548#7 --363548#6 --363548#5 --363548#4 --363548#2 --363548#1 --363548#0"/>
+        <busStop id="-1300954@-4088" name="Dar Lhamra"/>
+        <busStop id="-1309908@-4088" name="Souk Ould Mina"/>
+        <busStop id="-1297996@-4088" name="Cité Police Ibn Sina"/>
+        <busStop id="-1318853" name="Café Kairaouan"/>
+        <busStop id="-1307541@-4088" name="Lycée Fechtali"/>
+        <busStop id="-1305957@-4086" name="École Elbennay"/>
+        <busStop id="-1315940@-4086" name="C.A. Tensift"/>
+        <busStop id="-1303456" name="Terminus Mosquée Ferrara"/>
+    </ptLine>
+    <ptLine id="-4090" name="L9E Nassim - BD. Houphouët Boigny" line="L9E" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364769#0 -364769#1 -364792#0 -364792#1 -364792#3 --363342 --363878#3 --363878#1 --364084#3 --364084#2 --364084#1 --364084#0 --361260#3 --361260#2 --361260#1 --364731#2 --364731#1 --364731#0 -364744#0 -364744#1 -364744#2 -364744#3 -361337 -362938#0 -362938#1 -362938#2 -361497#1 -361497#2 --363131#11 --363131#10 --363131#9 --363131#8 --363131#7 --363131#6 --363131#5 --363131#4 --363131#3 --363131#2 --363131#1 --363131#0 --363548#19 --363548#18 --363548#17 --363548#15 --363548#14 --363548#13 --363548#12 --363548#11 --363548#10 --363548#8 --363548#7 --363548#6 --363548#5 --363548#4 --363548#2 --363548#1 --363548#0 -364247#0 -364247#1 -362699#0 -362699#1 -362699#2 -364056#0 -364056#1"/>
+        <busStop id="-1303612" name="Groupe Scolaire Al Amjad"/>
+        <busStop id="-1318136" name="Boulevard des Facultés"/>
+        <busStop id="-1303456" name="Terminus Mosquée Ferrara"/>
+        <busStop id="-1303795" name="Cité Police Ibn Sina"/>
+        <busStop id="-1306905" name="Souk Ould Mina"/>
+        <busStop id="-1301325" name="Dar Lhamra"/>
+    </ptLine>
+    <ptLine id="-4092" name="L301 Fouala - Hay Hassani" line="L301" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364054#0 -364054#1 -362482#0 -362482#1 -362482#2 -361693#0 -361693#1 -361693#2 -361693#3 -361693#4 -361693#5 -364669#0 -364669#1 -364669#2 -364669#3 -364669#4 -364669#5 -364669#6 -364669#7"/>
+        <busStop id="-1307753" name="Sidi Al Khadir"/>
+        <busStop id="-1318756" name="Stade Hay Hassani"/>
+        <busStop id="-1301968" name="Hay Hassani"/>
+    </ptLine>
+    <ptLine id="-4093" name="L51 G. R. Ouled Ziane-Errahma" line="L51" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364775#1 -364457#0 -364457#1 -364457#2 -364457#3 -362501#0 -362501#4 -362501#5 -362501#6 -362501#7 -363815#0 -363815#1 -364776#0 -364776#1 -361734#0 -361734#1 -362448#1 -362448#3 -362448#4 -362448#5 -362448#6 -362645 -364272#0 -364272#1 -364272#2 -364272#3 -364272#4 -364272#5 -364272#6 -363582#0 -363582#1 -363582#2 -363582#3 -363582#4 -361551#0 -361551#1 -364676 -364897#0 -364897#1 -364897#2"/>
+        <busStop id="-1298379" name="Facultés - Route d&apos;El Jadida"/>
+    </ptLine>
+    <ptLine id="-4095" name="Tram 2: Aïn Diab &gt; Sidi Bernoussi" line="T2" type="tram" vClass="tram" color="255,219,47" completeness="1.00">
+        <route edges="-362320#54 -361752#1 -361752#2 -361752#3 -361752#4 -361752#5 -361752#6 -361752#7 -361752#8 -361752#9 -361752#10 -361752#11 -361752#12 -361752#13 -361752#15 -361752#18 -361752#21 -361752#23 -361752#24 -361752#30 -361752#31 -361752#32 -361752#33 -361752#34 -361752#35 -361752#37 -361752#39 -361752#40 -361752#41 -361752#42 -361752#43 -361752#44 -361752#45 -361752#46 -361752#47 -361752#50 -361752#51 -361752#52 -361752#53"/>
+        <busStop id="1303933" name="Hay Hassani"/>
+        <busStop id="-1308382" name="Sidi Abderrahmane"/>
+        <busStop id="-1315086" name="Cité de l&apos;Air"/>
+        <busStop id="-1307748" name="Abdellah Ben Cherif"/>
+        <busStop id="-1307824" name="Place Financière"/>
+        <busStop id="-1303101" name="Anfa Park"/>
+        <busStop id="-1305161" name="Anfa Clubs"/>
+        <busStop id="-1312707" name="Beauséjour"/>
+    </ptLine>
+    <ptLine id="-4097" name="L19 Terminus Riad El Oulfa 3 - Place Maréchal" line="L19" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364138#0 -364138#1 -360649#0 -360649#1 -360649#2 -361076#1 -361076#2 -361076#3 -361076#4 -361076#5 -361076#6 -361076#7 -361076#8 -361076#9 -361076#10 -361076#11 -361076#12 -361076#13 -362840#0 -362840#1 -362840#2 -362840#3 -362840#4 -362840#5 -362713#0 -361109 -362419#2 -362419#3 -362419#4 -362419#5 -362419#6 -363710 -362699#0 -362699#1 -362699#2 -364056#0 -364056#1"/>
+        <busStop id="-1299777" name="Café Tafoukt"/>
+        <busStop id="-1302193" name="Café Bouchiki"/>
+        <busStop id="-1303655" name="Mosquée Afghanistan"/>
+    </ptLine>
+    <ptLine id="-4099" name="T1: Sidi Moumen &gt; Lissasfa" line="T1" type="tram" vClass="tram" color="243,130,48" completeness="1.00">
+        <route edges="-362354#0 -362354#1 -362354#2 -362354#3 -362354#4 -362354#5 -362354#7 -362354#8 -362354#10"/>
+        <busStop id="-1312010" name="Facultés"/>
+        <busStop id="-1309625" name="Laymoune"/>
+    </ptLine>
+    <ptLine id="-4102" name="L19 Place Maréchal - Terminus Riad El Oulfa 3" line="L19" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364056#1 -363951#0 -363951#1 -364548#0 -364548#1 -364548#2 -364548#3 -364548#4 -364830#1 -364830#2 -364830#3 -364830#5 --362840#5 --362840#4 --362840#3 --362840#2 --362840#1 --362840#0 --361076#13 --361076#12 --361076#11 --361076#10 --361076#9 --361076#8 --361076#7 --361076#6 --361076#5 --361076#4 --361076#3 --361076#2 --361076#1 --360649#2 --360649#1 --360649#0 --364138#1 --364138#0"/>
+        <busStop id="-1310234@-4102" name="Mosquée Afghanistan"/>
+        <busStop id="-1312482" name="Café Bouchiki"/>
+        <busStop id="-1311578" name="Café Tafoukt"/>
+    </ptLine>
+    <ptLine id="-4103" name="L97B Faculté Ben M&apos;Sick - Lissasfa" line="L97B" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364056#1 -363951#0 -363951#1 -363127#0 -363127#1 -363127#2 -363710 -364584#0 -364584#1 -361243 -363745#3 -363745#4 -363745#5 -363745#6 -363745#7 -363745#10 -363745#11 -363745#12 -360645#0 -360645#1 -364299#4 -364891 -361708#0 -361708#1 -361708#2 -361708#3 -360607#1 -360607#2 -360607#5 -360607#6 -362586#2 -362586#3 -363783 -360614#0 -360614#1 -360614#2 -360614#3 -360614#4 -363356#0 -363356#1 -363356#2 -364818#1 -362242#1 -362242#2 -362242#3 -362592#0 -362592#1 -362592#2 -364015 -361925#0 -361925#1 -361951 -363992#0 -363992#2 -361310#0 -361310#1 -361310#2 -361310#3 -361310#4 -362384 -364926"/>
+        <busStop id="-1301380" name="L&apos;Academie"/>
+        <busStop id="-1305082" name="Polyclinique CNSS Rabia"/>
+        <busStop id="-1307043" name="Carr. Schneider"/>
+        <busStop id="-1305225" name="Résidences Firdaouss"/>
+        <busStop id="-1316390" name="Tribunal"/>
+        <busStop id="-1316060" name="Hay Salam"/>
+        <busStop id="-1315879" name="Terminus Hay Salam"/>
+    </ptLine>
+    <ptLine id="-4106" name="L97B Lissasfa - Faculté Ben M&apos;Sick" line="L97B" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364769#0 -364769#1 -364792#0 -364792#1 -364792#3 -361090#0 -361090#1 -361090#3 -361363#0 -361363#1 -363696#0 -363696#1 -363696#2 -360818#0 -360818#1 -362292#0 -362777#1 -362777#2 -362777#3 -363304#1 -363304#2 -362728#0 -362728#1 -362650#0 -362650#1 -362650#2 -362650#3 -362650#4 -360657#0 -360657#1 -360657#2 -363763#0 -363763#1 -362100#0 -362100#1 -362100#2 -362100#3 -362100#5 -362100#6 -362100#7 -362046#0 -362046#1 -362046#2 -362046#3 -364448#1 -362326#1 -362326#2 -362326#4 -361935#1 -361935#2 -361935#3 -361935#6 -361935#7 -361935#9 -361935#10 -361935#11 -362781#0 -363257#1 -364678#0 -364678#2 -364056#0 -364056#1"/>
+        <busStop id="-1297690" name="Terminus Hay Salam"/>
+        <busStop id="-1308918" name="Hay Salam"/>
+        <busStop id="-1316081" name="Tribunal"/>
+        <busStop id="-1298113" name="Résidences Firdaouss"/>
+        <busStop id="-1299936" name="Carr. Schneider"/>
+        <busStop id="-1304523" name="Polyclinique CNSS Rabia"/>
+    </ptLine>
+    <ptLine id="-4109" name="L63 Salmia 2 Terminus - Sidi Al Khadir" line="L63" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364056#1 -363951#0 -363951#1 -364548#0 -364548#1 -364548#2 -364548#3 -364548#4 -364830#1 -364830#2 -364830#3 -364830#5 --362840#5 --362840#4 --362840#3 --362840#2 --362840#1 --362840#0 --361076#13 --361076#12 --361076#11 --361076#10 --361076#9 --361076#8 --361076#7 --361076#6 --361076#5 --361076#4 --361076#3 --361076#2 --361076#1 --360649#2 --360649#1 --360649#0 --364138#1 --364138#0"/>
+        <busStop id="-1310234@-4102" name="Mosquée Afghanistan"/>
+        <busStop id="-1312482" name="Café Bouchiki"/>
+        <busStop id="-1311578" name="Café Tafoukt"/>
+        <busStop id="-1297882" name="ISTA Afghanistan"/>
+        <busStop id="-1307753" name="Sidi Al Khadir"/>
+    </ptLine>
+    <ptLine id="-4112" name="L13 Sidi Belyout (Bd d&apos;Anfa)-Terminus Kasbat Al amine" line="L13" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364056#1 -363951#0 -363951#1 -363127#0 -363127#1 -363127#2 -363710 -364584#0 -364584#1 -361243 -363745#3 -363745#4 -363745#5 -363745#6 -363745#7 -363745#10 -363745#11 -363745#12 -360645#0 -360645#1 -364299#4 -364891 -361708#0 -361708#1 -361708#2 -361708#3 -360607#1 -360607#2 -360607#5 -360607#6 -362586#2 -362586#3 -363783 -360614#0 -360614#1 -360614#2 -360614#3 -360614#4 -363356#0 -363356#1 -363356#2 -364818#1 -362242#1 -362242#2 -362242#3 -362592#0 -362592#1 -362592#2 -364015 -361925#0 -361925#1 -361951 -363992#0 -363992#2 -361310#0 -361310#1 -361310#2 -361310#3 -361310#4 -362384 -364926"/>
+        <busStop id="-1305082" name="Polyclinique CNSS Rabia"/>
+        <busStop id="-1307043" name="Carr. Schneider"/>
+        <busStop id="-1305225" name="Résidences Firdaouss"/>
+        <busStop id="-1316390" name="Tribunal"/>
+        <busStop id="-1316060" name="Hay Salam"/>
+        <busStop id="-1315879" name="Terminus Hay Salam"/>
+    </ptLine>
+    <ptLine id="-4113" name="L84 Farah Salam - BD. Houphouët Boigny" line="L84" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364744#0 -364744#1 -364744#2 -364744#3 -361337 -362938#0 -362938#1 -362938#2 -361497#1 -361497#2 -364054#0 -364054#1 -361822#0 -361822#1 -361822#2 -361822#3 -361822#4 -361822#5 -361822#6 -361822#7 -361822#8"/>
+        <busStop id="-1303456" name="Terminus Mosquée Ferrara"/>
+        <busStop id="-1307753" name="Sidi Al Khadir"/>
+        <busStop id="-1299435" name="Derb Jamila"/>
+    </ptLine>
+    <ptLine id="-4114" name="BW2 Ouled Azzouz-Oulmès" line="BW2" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364836#0 -364836#2 -364836#3 -364836#5 -364836#6 -364836#8 -364836#10 -364836#11 -364836#14 -364836#15 -364836#16 -364836#17 -364836#18 -364836#19 -364836#20 -364836#22 -364836#23 -364836#24 -364836#25 -364836#26 -364836#30 -364836#31 --362798#3 --362798#2 --362798#1 --362798#0"/>
+        <busStop id="-1300867" name="Moulouya"/>
+        <busStop id="-1311424" name="Oued Beht"/>
+        <busStop id="-1307196" name="Oued Laou"/>
+        <busStop id="-1307150" name="Oued Oum Rabia"/>
+        <busStop id="-1312014" name="Les Musees"/>
+    </ptLine>
+    <ptLine id="-4116" name="L301 Hay Hassani-Fouala" line="L301" type="bus" vClass="bus" completeness="1.00">
+        <route edges="--362026#3 --362026#2 --362026#1 --362026#0 --360649#2 --360649#1 --360649#0 -363327 -361822#0 -361822#1 -361822#2 -361822#3 -361822#4 -361822#5 -361822#6 -361822#7 -361822#8"/>
+        <busStop id="-1308094" name="Hay Hassani T2"/>
+        <busStop id="-1297882" name="ISTA Afghanistan"/>
+        <busStop id="-1299435" name="Derb Jamila"/>
+    </ptLine>
+    <ptLine id="-4118" name="L68 Hay Salam-Ouled Mellouk" line="L68" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-361951 -363992#0 -363992#2 --363342 --363878#3 --363878#1 --364084#3 --364084#2 --364084#1 --364084#0 -362820 -362063#0 -362063#1 -362063#2 -360913#0 -360913#1 -360913#2 -361499#0 -361499#1 -361626#1 -361626#2 -362568 -363143 -360993 -360893 -364359#0 -364359#1 -360854#0 -360854#1 -360854#2 --364567#3 --364567#2 --364567#1 --364567#0 --362218#0 --364553 -360594#0 -360594#1 -363957#0 -363957#1 -363957#2 -363957#3 -363957#4 -363957#5 --362941#10 --362941#8 --362941#7 --362941#6 --362941#5 --362941#4 --362941#2 --362941#1 --362941#0 --364379 -364576#1 -364576#2 -363316#0 -363316#1 -364302#0 -364302#1 -364302#2 -361298#0 -361298#1 -361298#2 -361012#0 -361012#1 -364519#0 -364519#1 -364519#2 -360736 -360948#0 -360948#1 -362326#1 -362326#2 -362326#4 -361935#1 -361935#2 -361935#3 -361935#6 -361935#7 -361935#9 -361935#10 -361935#11 -362781#0 -363257#1 -364678#0 -364678#2 -364056#0 -364056#1"/>
+        <busStop id="-1315879" name="Terminus Hay Salam"/>
+        <busStop id="-1303612" name="Groupe Scolaire Al Amjad"/>
+        <busStop id="-1302544" name="Mosquée El Fath"/>
+        <busStop id="-1315816" name="Rond Point Chahdia"/>
+        <busStop id="-1317797" name="Oulfa"/>
+        <busStop id="-1313606" name="C.A. Tensift"/>
+        <busStop id="-1307804" name="École Elbennay"/>
+        <busStop id="-1297786" name="École Al Ajial"/>
+        <busStop id="-1299194" name="Lycée Fechtali"/>
+        <busStop id="-1317248" name="Résidence Abwab Rabia"/>
+        <busStop id="-1299936" name="Carr. Schneider"/>
+        <busStop id="-1304523" name="Polyclinique CNSS Rabia"/>
+    </ptLine>
+    <ptLine id="-4119" name="L63 Sidi Al Khadir - Salmia 2 Terminus" line="L63" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-364054#0 -364054#1 -362482#0 -362482#1 -362482#2 -361693#0 -361693#1 -361693#2 -361693#3 -361693#4 -361693#5 -364669#0 -364669#1 -364669#2 -364669#3 -364669#4 -364669#5 -364669#6 -364669#7 -360898#0 -360898#1 -360898#2 -361437#0 -361437#1 -361437#2 -361437#3 -362840#0 -362840#1 -362840#2 -362840#3 -362840#4 -362840#5 -362713#0 -361109 -362419#2 -362419#3 -362419#4 -362419#5 -362419#6 -363710 -362699#0 -362699#1 -362699#2 -364056#0 -364056#1"/>
+        <busStop id="-1300374" name="Sidi Al Khadir"/>
+        <busStop id="-1318756" name="Stade Hay Hassani"/>
+        <busStop id="-1301968" name="Hay Hassani"/>
+        <busStop id="-1303655" name="Mosquée Afghanistan"/>
+        <busStop id="-1300468" name="Hay El Hana"/>
+    </ptLine>
+</ptLines>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-30 00:44:30 by Eclipse SUMO GUI Version c915cd253
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm.net.xml"/>
+        <route-files value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_pt.rou.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_activitygen.merged.rou.xml"/>
+        <additional-files value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_polygons.add.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/basic.vType.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_stops.add.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_complete_parking_areas.add.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_parking_rerouters.add.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_taxi_stands.add.xml,/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/osm_taxi_rerouters.add.xml"/>
+    </input>
+
+    <output>
+        <output-prefix value="output."/>
+        <summary-output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/summary.xml"/>
+        <person-summary-output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/person.summary.xml"/>
+        <tripinfo-output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="false"/>
+        <statistic-output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/statistics.xml"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="86400.0"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.8"/>
+        <ignore-junction-blocker value="60"/>
+        <ignore-route-errors value="true"/>
+        <collision.action value="teleport"/>
+        <time-to-teleport value="300"/>
+        <max-depart-delay value="900"/>
+        <time-to-impatience value="120"/>
+        <parking.maneuver value="true"/>
+        <pedestrian.model value="striping"/>
+        <pedestrian.striping.stripe-width value="0.55"/>
+        <pedestrian.striping.dawdling value="0.2"/>
+        <pedestrian.striping.jamtime value="60"/>
+        <pedestrian.striping.jamtime.crossing value="10"/>
+        <pedestrian.striping.reserve-oncoming value="0.25"/>
+        <pedestrian.striping.reserve-oncoming.junctions value="0.34"/>
+        <ride.stop-tolerance value="25"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="astar"/>
+        <persontrip.walkfactor value="0.75"/>
+        <persontrip.transfer.car-walk value="parkingAreas,allJunctions"/>
+        <persontrip.transfer.taxi-walk value="parkingAreas,allJunctions"/>
+        <persontrip.transfer.walk-taxi value="parkingAreas,allJunctions"/>
+        <persontrip.taxi.waiting-time value="300"/>
+        <device.rerouting.probability value="1"/>
+        <device.rerouting.period value="300"/>
+        <device.rerouting.pre-period value="300"/>
+        <device.rerouting.bike-speeds value="true"/>
+        <person-device.rerouting.probability value="1"/>
+        <person-device.rerouting.period value="300"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <no-warnings value="false"/>
+        <duration-log.disable value="false"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="false"/>
+    </report>
+
+    <taxi_device>
+        <device.taxi.dispatch-algorithm value="greedy"/>
+        <device.taxi.dispatch-algorithm.output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/taxi.dispatch.xml"/>
+        <device.taxi.dispatch-period value="60"/>
+        <device.taxi.idle-algorithm value="stop"/>
+        <device.taxi.idle-algorithm.output value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/taxi.idle.xml"/>
+    </taxi_device>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="/home/dahou/Desktop/StageLIDSI/BuildingsFeatures_test/simH/epH/default-gui.xml"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/summary_file.xsd">
+</summary>

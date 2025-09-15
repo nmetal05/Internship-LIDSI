@@ -1,0 +1,103 @@
+{
+  "seed": 42,
+  "maxNumTry": 10,
+  "outputPrefix": "osm_activitygen",
+  "mergeRoutesFiles": true,
+  "sumocfg": "duarouter.sumocfg",
+  "SUMOnetFile": "osm.net.xml",
+  "SUMOadditionals": {
+    "vTypes": "basic.vType.xml",
+    "parkings": "osm_complete_parking_areas.add.xml"
+  },
+  "intermodalOptions": {
+    "parkingAreaBlacklist": [],
+    "vehicleAllowedParking": [
+      "evehicle",
+      "motorcycle",
+      "passenger",
+      "special"
+    ],
+    "taxiFleetSize": 0,
+    "taxiFleetInitialTAZs": [],
+    "taxiStands": "osm_taxi_stands.add.xml",
+    "taxiStandsBlacklist": [],
+    "modeSelection": "PROBABILITY"
+  },
+  "population": {
+    "entities": 50,
+    "tazDefinition": "osm_taz.xml",
+    "tazWeights": "osm_taz_weight.csv",
+    "buildingsWeight": "buildings/",
+    "PoIsDefinition": "TBD"
+  },
+  "taz": {
+    "-4101": ["-4101"],
+    "-4065": ["-4065"],
+    "-4069": ["-4069"],
+    "-4111": ["-4111"],
+    "-4094": ["-4094"],
+    "-4105": ["-4105"]
+  },
+  "activities": {
+    "Home": {
+      "duration": { "m": 1800, "s": 900 },
+      "start": {}
+    },
+    "P-Hospital": {
+      "duration": { "m": 27000, "s": 3600 },
+      "start": { "m": 28800, "s": 3600 }
+    }
+  },
+  "slices": {
+    "-4101_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4101",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    },
+    "-4065_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4065",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    },
+    "-4069_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4069",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    },
+    "-4111_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4111",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    },
+    "-4094_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4094",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    },
+    "-4105_-4105": {
+      "perc": 0.166667,
+      "loc_origin": "-4105",
+      "loc_primary": "-4105",
+      "activityChains": [
+        [1.0, ["Home", "P-Hospital", "Home"], [["special", 1.0]]]
+      ]
+    }
+  },
+  "minEdgeAllowed": 12.0,
+  "stopBufferDistance": 20.0
+}

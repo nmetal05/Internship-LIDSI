@@ -1,0 +1,19 @@
+✅ Detailed dataset summary:
+
+X data sizes, percentages, and attributes:
+od_matrix            :       30 elements (  0.02%) | attributes: amount
+vtypes               :      126 elements (  0.10%) | attributes: speed, personCapacity, containerCapacity, probability, vClass_hash, id_hash
+activitygen          :      756 elements (  0.60%) | attributes: duration, start_time, mode_probs
+stops                :      244 elements (  0.20%) | attributes: startPos, endPos
+parking              :      105 elements (  0.08%) | attributes: startPos, endPos, roadsideCapacity
+taxis                :       32 elements (  0.03%) | attributes: startPos, endPos, roadsideCapacity, friendlyPos
+network_edges        :   123576 elements ( 98.89%) | attributes: speed, length, num_lanes, lane_id_hash
+network_summary      :        2 elements (  0.00%) | attributes: num_edges, num_junctions
+bus_trips            :       88 elements (  0.07%) | attributes: depart, num_stops, total_stop_duration, line_id_hash
+Total X size: 124959 elements
+
+Y data sizes, percentages, and attributes:
+tripinfo             :     5436 elements ( 99.25%) | attributes: trip_id_hash, vType_hash, depart, arrival, duration, routeLength, waitingTime, stopTime, timeLoss
+statistics           :       31 elements (  0.57%) | attributes: performance, vehicles, teleports, safety, vehicleTripStatistics
+person_summary       :       10 elements (  0.18%) | attributes: loaded, walking, waitingForRide, riding, stopping, jammed, ended, arrived, teleports, duration
+Total Y size: 5477 elements

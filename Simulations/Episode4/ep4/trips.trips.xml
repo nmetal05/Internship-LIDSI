@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-27 16:54:43.481709 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ UNKNOWN
+<configuration>
+    <net-file value="osm.net.xml"/>
+    <ptlines-file value="osm_ptlines.xml"/>
+    <ptstops-file value="osm_stops.add.xml"/>
+    <output-file value="osm_pt.rou.xml"/>
+    <begin value="14400.0"/>
+    <end value="86400.0"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_bus_L301:0" type="pt_bus" depart="14403.0" departLane="best" from="--181340#3" to="-180545#5">
+        <stop busStop="-633967" duration="30"/>  <!-- Hay Hassani T2 -->
+        <stop busStop="-633672" duration="30"/>  <!-- ISTA Afghanistan -->
+        <stop busStop="-641493" duration="30"/>  <!-- Derb Jamila -->
+    </trip>
+    <trip id="1_bus_L97B:0" type="pt_bus" depart="14415.0" departLane="best" from="-177456" to="-180187#0">
+        <stop busStop="-629689" duration="30"/>  <!-- L'Academie -->
+        <stop busStop="-645244" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-644616" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-644063" duration="30"/>  <!-- Résidences Firdaouss -->
+        <stop busStop="-630256" duration="30"/>  <!-- Tribunal -->
+        <stop busStop="-637686" duration="30"/>  <!-- Hay Salam -->
+        <stop busStop="-645667" duration="30"/>  <!-- Terminus Hay Salam -->
+    </trip>
+    <trip id="2_tram_T2:0" type="pt_tram" depart="14415.0" departLane="best" from="-181475#1" to="-181475#54">
+        <stop busStop="-637986" duration="30"/>  <!-- Beauséjour -->
+        <stop busStop="-642554" duration="30"/>  <!-- Anfa Clubs -->
+        <stop busStop="-640970" duration="30"/>  <!-- Anfa Park -->
+        <stop busStop="-647232" duration="30"/>  <!-- Place Financière -->
+        <stop busStop="-630498" duration="30"/>  <!-- Abdellah Ben Cherif -->
+        <stop busStop="-650404" duration="30"/>  <!-- Cité de l'Air -->
+        <stop busStop="-649549" duration="30"/>  <!-- Sidi Abderrahmane -->
+        <stop busStop="-646730" duration="30"/>  <!-- Hay Hassani -->
+    </trip>
+    <trip id="3_bus_L50:0" type="pt_bus" depart="14417.0" departLane="best" from="-178024" to="--178009#2">
+        <stop busStop="-640755" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-632631" duration="30"/>  <!-- École Al Ajial -->
+        <stop busStop="-629635" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-637119" duration="30"/>  <!-- Café Kairaouan -->
+        <stop busStop="-638160" duration="30"/>  <!-- Marjane Hay Hassani -->
+        <stop busStop="-646915" duration="30"/>  <!-- Souk Ould Mina -->
+        <stop busStop="-634036" duration="30"/>  <!-- Dar Lhamra -->
+    </trip>
+    <trip id="4_bus_L68:0" type="pt_bus" depart="14452.0" departLane="best" from="-179664#3" to="--177764#1">
+        <stop busStop="-645244" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-644616" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-635710" duration="30"/>  <!-- École Elbennay -->
+        <stop busStop="-647547" duration="30"/>  <!-- C.A. Tensift -->
+        <stop busStop="-650614" duration="30"/>  <!-- Oulfa -->
+        <stop busStop="-647417" duration="30"/>  <!-- Rond Point Chahdia -->
+        <stop busStop="-635568" duration="30"/>  <!-- Mosquée El Fath -->
+        <stop busStop="-647165" duration="30"/>  <!-- Etablissement Moussaoui -->
+        <stop busStop="-632301" duration="30"/>  <!-- Groupe Scolaire Al Amjad -->
+    </trip>
+    <trip id="5_tram_T2:1" type="pt_tram" depart="14455.0" departLane="best" from="178073#0" to="-178073#53">
+        <stop busStop="647234" duration="30"/>  <!-- Hay Hassani -->
+        <stop busStop="-631403" duration="30"/>  <!-- Sidi Abderrahmane -->
+        <stop busStop="-632608" duration="30"/>  <!-- Cité de l'Air -->
+        <stop busStop="-638673" duration="30"/>  <!-- Abdellah Ben Cherif -->
+        <stop busStop="-635306" duration="30"/>  <!-- Place Financière -->
+        <stop busStop="-631631" duration="30"/>  <!-- Anfa Park -->
+        <stop busStop="-630708" duration="30"/>  <!-- Anfa Clubs -->
+        <stop busStop="-639358" duration="30"/>  <!-- Beauséjour -->
+    </trip>
+    <trip id="6_bus_L13:0" type="pt_bus" depart="14458.0" departLane="best" from="-179664#3" to="-180187#0">
+        <stop busStop="-645244" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-644616" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-644063" duration="30"/>  <!-- Résidences Firdaouss -->
+        <stop busStop="-630256" duration="30"/>  <!-- Tribunal -->
+        <stop busStop="-637686" duration="30"/>  <!-- Hay Salam -->
+        <stop busStop="-645667" duration="30"/>  <!-- Terminus Hay Salam -->
+    </trip>
+    <trip id="7_bus_L97B:1" type="pt_bus" depart="14493.0" departLane="best" from="-179063#3" to="-180843#6">
+        <stop busStop="-646707" duration="30"/>  <!-- Terminus Hay Salam -->
+        <stop busStop="-636324" duration="30"/>  <!-- Hay Salam -->
+        <stop busStop="-643641" duration="30"/>  <!-- Tribunal -->
+        <stop busStop="-634109" duration="30"/>  <!-- Résidences Firdaouss -->
+        <stop busStop="-637264" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-637075" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+    </trip>
+    <trip id="9_bus_L9E:0" type="pt_bus" depart="14531.0" departLane="best" from="--177764#1" to="--178009#2">
+        <stop busStop="-637332" duration="30"/>  <!-- Groupe Scolaire Al Amjad -->
+        <stop busStop="-636445" duration="30"/>  <!-- Boulevard des Facultés -->
+        <stop busStop="-640755" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-639018" duration="30"/>  <!-- Cité Police Ibn Sina -->
+        <stop busStop="-646915" duration="30"/>  <!-- Souk Ould Mina -->
+        <stop busStop="-634036" duration="30"/>  <!-- Dar Lhamra -->
+    </trip>
+    <trip id="10_bus_L301:1" type="pt_bus" depart="14532.0" departLane="best" from="-177678#0" to="-179559#7">
+        <stop busStop="-630610" duration="30"/>  <!-- Sidi Al Khadir -->
+        <stop busStop="-642135" duration="30"/>  <!-- Stade Hay Hassani -->
+        <stop busStop="-639989" duration="30"/>  <!-- Hay Hassani -->
+    </trip>
+    <trip id="11_bus_L63:0" type="pt_bus" depart="14533.0" departLane="best" from="-177678#0" to="-180475">
+        <stop busStop="-643745" duration="30"/>  <!-- Sidi Al Khadir -->
+        <stop busStop="-642135" duration="30"/>  <!-- Stade Hay Hassani -->
+        <stop busStop="-639989" duration="30"/>  <!-- Hay Hassani -->
+        <stop busStop="-647875" duration="30"/>  <!-- Mosquée Afghanistan -->
+        <stop busStop="-629455" duration="30"/>  <!-- Hay El Hana -->
+    </trip>
+    <trip id="12_bus_L63:1" type="pt_bus" depart="14565.0" departLane="best" from="--177603#2" to="-177678#0">
+        <stop busStop="-646556" duration="30"/>  <!-- Mosquée Afghanistan -->
+        <stop busStop="-647519" duration="30"/>  <!-- Café Bouchiki -->
+        <stop busStop="-630154" duration="30"/>  <!-- Café Tafoukt -->
+        <stop busStop="-633672" duration="30"/>  <!-- ISTA Afghanistan -->
+        <stop busStop="-630610" duration="30"/>  <!-- Sidi Al Khadir -->
+    </trip>
+    <trip id="13_bus_L68:1" type="pt_bus" depart="14601.0" departLane="best" from="-180187#0" to="-180843#6">
+        <stop busStop="-645667" duration="30"/>  <!-- Terminus Hay Salam -->
+        <stop busStop="-637332" duration="30"/>  <!-- Groupe Scolaire Al Amjad -->
+        <stop busStop="-644297" duration="30"/>  <!-- Mosquée El Fath -->
+        <stop busStop="-640798" duration="30"/>  <!-- Rond Point Chahdia -->
+        <stop busStop="-629239" duration="30"/>  <!-- Oulfa -->
+        <stop busStop="-639573" duration="30"/>  <!-- C.A. Tensift -->
+        <stop busStop="-646629" duration="30"/>  <!-- École Elbennay -->
+        <stop busStop="-632631" duration="30"/>  <!-- École Al Ajial -->
+        <stop busStop="-629635" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-648811" duration="30"/>  <!-- Résidence Abwab Rabia -->
+        <stop busStop="-637264" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-637075" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+    </trip>
+    <trip id="15_bus_72:0" type="pt_bus" depart="14653.0" departLane="best" from="--179071#10" to="-177678#0">
+        <stop busStop="-646024" duration="30"/>  <!-- Stade Hay Hassani -->
+        <stop busStop="-646556@-2064" duration="30"/>  <!-- Mosquée Afghanistan -->
+        <stop busStop="-644329" duration="30"/>  <!-- Terminus Sidi Al-Khadir -->
+    </trip>
+    <trip id="16_bus_L84:0" type="pt_bus" depart="14703.0" departLane="best" from="-178024" to="-180545#5">
+        <stop busStop="-640755" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-630610" duration="30"/>  <!-- Sidi Al Khadir -->
+        <stop busStop="-641493" duration="30"/>  <!-- Derb Jamila -->
+    </trip>
+    <trip id="17_tram_T1:0" type="pt_tram" depart="14726.0" departLane="best" from="-178004#0" to="-178004#10">
+        <stop busStop="-645143" duration="30"/>  <!-- Laymoune -->
+        <stop busStop="-639363" duration="30"/>  <!-- Facultés Terminus -->
+    </trip>
+    <trip id="18_bus_BW2:0" type="pt_bus" depart="14753.0" departLane="best" from="-180605#3" to="-180605#25">
+        <stop busStop="-630637" duration="30"/>  <!-- Moulouya -->
+        <stop busStop="-649480" duration="30"/>  <!-- Oued Beht -->
+        <stop busStop="-637416" duration="30"/>  <!-- Oued Laou -->
+        <stop busStop="-645324" duration="30"/>  <!-- Oued Oum Rabia -->
+        <stop busStop="-636467" duration="30"/>  <!-- Les Musees -->
+    </trip>
+    <trip id="19_bus_L143:0" type="pt_bus" depart="14762.0" departLane="best" from="-179855" to="--178009#2">
+        <stop busStop="-635191" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+        <stop busStop="-639573" duration="30"/>  <!-- C.A. Tensift -->
+        <stop busStop="-646629" duration="30"/>  <!-- École Elbennay -->
+        <stop busStop="-629635" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-638160" duration="30"/>  <!-- Marjane Hay Hassani -->
+        <stop busStop="-646915" duration="30"/>  <!-- Souk Ould Mina -->
+        <stop busStop="-634036" duration="30"/>  <!-- Dar Lhamra -->
+    </trip>
+    <trip id="20_bus_L143:1" type="pt_bus" depart="14783.0" departLane="best" from="--178009#2" to="-178024">
+        <stop busStop="-636293" duration="30"/>  <!-- Dar Lhamra -->
+        <stop busStop="-630250" duration="30"/>  <!-- Souk Ould Mina -->
+        <stop busStop="-634407" duration="30"/>  <!-- Cité Police Ibn Sina -->
+        <stop busStop="-644909" duration="30"/>  <!-- Café Kairaouan -->
+        <stop busStop="-632331" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-635710" duration="30"/>  <!-- École Elbennay -->
+        <stop busStop="-647547" duration="30"/>  <!-- C.A. Tensift -->
+        <stop busStop="-640755" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+    </trip>
+    <trip id="21_bus_L19:0" type="pt_bus" depart="14789.0" departLane="best" from="-179071#5" to="-177603#2">
+        <stop busStop="-647176" duration="30"/>  <!-- Café Tafoukt -->
+        <stop busStop="-645144" duration="30"/>  <!-- Café Bouchiki -->
+        <stop busStop="-647875" duration="30"/>  <!-- Mosquée Afghanistan -->
+    </trip>
+    <trip id="22_bus_L109:0" type="pt_bus" depart="14806.0" departLane="best" from="-177456" to="--179530">
+        <stop busStop="-629689" duration="30"/>  <!-- L'Academie -->
+        <stop busStop="-645244" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+        <stop busStop="-644616" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-648583" duration="30"/>  <!-- Résidence Abwab Rabia -->
+        <stop busStop="-632331@-2076" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-633153" duration="30"/>  <!-- École Al Ajial -->
+        <stop busStop="-635710@-2076" duration="30"/>  <!-- École Elbennay -->
+        <stop busStop="-647547@-2076" duration="30"/>  <!-- C.A. Tensift -->
+        <stop busStop="-650614@-2076" duration="30"/>  <!-- Oulfa -->
+        <stop busStop="-647417@-2076" duration="30"/>  <!-- Rond Point Chahdia -->
+        <stop busStop="-635568@-2076" duration="30"/>  <!-- Mosquée El Fath -->
+        <stop busStop="-640677" duration="30"/>  <!-- Café Atlas -->
+    </trip>
+    <trip id="24_bus_BW2:1" type="pt_bus" depart="14841.0" departLane="best" from="-181310#6" to="-181310#28">
+        <stop busStop="-641652" duration="30"/>  <!-- Les Musees -->
+        <stop busStop="-629552" duration="30"/>  <!-- Oued Oum Rabia -->
+        <stop busStop="-629960" duration="30"/>  <!-- Oued Laou -->
+        <stop busStop="-646132" duration="30"/>  <!-- Oued Beht -->
+        <stop busStop="-636312" duration="30"/>  <!-- Moulouya -->
+    </trip>
+    <trip id="25_tram_T1:1" type="pt_tram" depart="14883.0" departLane="best" from="-181489#2" to="-181489#10">
+        <stop busStop="-641485" duration="30"/>  <!-- Facultés -->
+        <stop busStop="-644367" duration="30"/>  <!-- Laymoune -->
+    </trip>
+    <trip id="26_bus_L19:1" type="pt_bus" depart="14885.0" departLane="best" from="--177603#2" to="--179071#5">
+        <stop busStop="-646556" duration="30"/>  <!-- Mosquée Afghanistan -->
+        <stop busStop="-647519" duration="30"/>  <!-- Café Bouchiki -->
+        <stop busStop="-630154" duration="30"/>  <!-- Café Tafoukt -->
+    </trip>
+    <trip id="27_bus_L50:1" type="pt_bus" depart="14908.0" departLane="best" from="-178009#2" to="-179855">
+        <stop busStop="-636293@-2086" duration="30"/>  <!-- Dar Lhamra -->
+        <stop busStop="-630250@-2086" duration="30"/>  <!-- Souk Ould Mina -->
+        <stop busStop="-634407@-2086" duration="30"/>  <!-- Cité Police Ibn Sina -->
+        <stop busStop="-632331@-2076" duration="30"/>  <!-- Lycée Fechtali -->
+        <stop busStop="-633153" duration="30"/>  <!-- École Al Ajial -->
+        <stop busStop="-635191" duration="30"/>  <!-- Terminus Mosquée Ferrara -->
+    </trip>
+    <trip id="29_bus_L13:1" type="pt_bus" depart="14974.0" departLane="best" from="-179063#3" to="-180843#6">
+        <stop busStop="-646707" duration="30"/>  <!-- Terminus Hay Salam -->
+        <stop busStop="-636324" duration="30"/>  <!-- Hay Salam -->
+        <stop busStop="-643641" duration="30"/>  <!-- Tribunal -->
+        <stop busStop="-634109" duration="30"/>  <!-- Résidences Firdaouss -->
+        <stop busStop="-637264" duration="30"/>  <!-- Carr. Schneider -->
+        <stop busStop="-637075" duration="30"/>  <!-- Polyclinique CNSS Rabia -->
+    </trip>
+</routes>
